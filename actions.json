@@ -90,6 +90,10 @@
     {
       "name": "/actions/mixedreality",
       "usage": "single"
+    },
+    {
+      "name": "/actions/WDCOF",
+      "usage": "single"
     }
   ],
   "default_bindings": [
