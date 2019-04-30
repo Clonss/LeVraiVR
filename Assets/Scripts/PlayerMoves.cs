@@ -12,7 +12,7 @@ public class PlayerMoves : MonoBehaviour
     public Transform pointerObj;
     private NavMeshAgent myNMA;
 
-    public SteamVR_ActionSet actionSetEnable;
+    public SteamVR_Input_ActionSet_WDCOF actionSetEnable;
     public SteamVR_Action_Boolean playerMoves;
 
     [SerializeField]
@@ -26,7 +26,7 @@ public class PlayerMoves : MonoBehaviour
         //trackedController = GetComponent<SteamVR_TrackedController>();
         //trackedController.PadClicked += Walk;
 
-        actionSetEnable.Activate();
+        actionSetEnable.Activate(SteamVR_Input_Sources.Any, 0, false);
     }
 
     // Update is called once per frame
