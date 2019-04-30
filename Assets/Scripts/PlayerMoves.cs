@@ -2,13 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Valve.VR;
+using Valve.VR.InteractionSystem;
 
 //[RequireComponent(typeof(SteamVR_TrackedController))]
 public class PlayerMoves : MonoBehaviour
 {
-    public VRTK.VRTK_ControllerEvents controllerEvent;
+    //public VRTK.VRTK_ControllerEvents controllerEvent;
     public Transform pointerObj;
     private NavMeshAgent myNMA;
+
+    public SteamVR_ActionSet actionSetEnable;
+    public SteamVR_Action_Boolean playerMoves;
 
     [SerializeField]
 
@@ -20,12 +25,17 @@ public class PlayerMoves : MonoBehaviour
         myNMA = GetComponent<NavMeshAgent>();
         //trackedController = GetComponent<SteamVR_TrackedController>();
         //trackedController.PadClicked += Walk;
+
+        actionSetEnable.Activate();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (playerMoves.GetState(SteamVR_Input_Sources.Any))
+        {
+            Walk();
+        }
     }
 
 
@@ -38,7 +48,7 @@ public class PlayerMoves : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 5f))
         {
             pointerObj.position = hit.point;
-            if (Input.GetKeyDown(KeyCode.LeftArrow) || controllerEvent.touchpadPressed)
+            if (Input.GetKeyDown(KeyCode.LeftArrow) /*|| controllerEvent.touchpadPressed*/)
             {
                 myNMA.destination = hit.point;
             }

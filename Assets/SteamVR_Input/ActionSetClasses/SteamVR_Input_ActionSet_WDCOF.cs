@@ -16,5 +16,13 @@ namespace Valve.VR
     
     public class SteamVR_Input_ActionSet_WDCOF : Valve.VR.SteamVR_ActionSet
     {
+        
+        public virtual SteamVR_Action_Boolean PlayerMoves
+        {
+            get
+            {
+                return SteamVR_Actions.wDCOF_PlayerMoves;
+            }
+        }
     }
 }

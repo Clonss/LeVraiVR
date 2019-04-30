@@ -17,11 +17,11 @@ namespace Valve.VR
     public class SteamVR_Input_ActionSet_buggy : Valve.VR.SteamVR_ActionSet
     {
         
-        public virtual SteamVR_Action_Vector2 Steering
+        public virtual SteamVR_Action_Vector2 steering
         {
             get
             {
-                return SteamVR_Actions.buggy_Steering;
+                return SteamVR_Actions.buggy_steering;
             }
         }
         
