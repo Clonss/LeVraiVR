@@ -10,6 +10,7 @@ public class PlayerMoves : MonoBehaviour
 {
     //public VRTK.VRTK_ControllerEvents controllerEvent;
     public Transform pointerObj;
+    public Transform target;
     private NavMeshAgent myNMA;
 
     public SteamVR_Input_ActionSet_WDCOF actionSetEnable;
@@ -32,23 +33,24 @@ public class PlayerMoves : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerMoves.GetState(SteamVR_Input_Sources.Any))
+        if (playerMoves.GetState(SteamVR_Input_Sources.Any) || Input.GetKeyDown(KeyCode.Mouse0))
         {
             Walk();
         }
+        Walk();
     }
 
 
     private void Walk()
     {
         RaycastHit hit;
-        Ray ray = new Ray(transform.position, transform.forward);
+        Ray ray = new Ray(transform.position, (target.transform.position - transform.position).normalized);
 
 
         if (Physics.Raycast(ray, out hit, 5f))
         {
             pointerObj.position = hit.point;
-            if (Input.GetKeyDown(KeyCode.LeftArrow) /*|| controllerEvent.touchpadPressed*/)
+            if (Input.GetKeyDown(KeyCode.Mouse0) /*|| controllerEvent.touchpadPressed*/)
             {
                 myNMA.destination = hit.point;
             }
