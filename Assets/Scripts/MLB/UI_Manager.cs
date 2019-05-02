@@ -7,7 +7,7 @@ public class UI_Manager : MonoBehaviour
 {
     public GameObject statsScreen;
     public Text timerText;
-    public float objectif;
+    private float objectif = 1200f;
     private float timerValue = 0f;
 
     public static UI_Manager s_Singleton;
