@@ -52,7 +52,6 @@ public class PlayerMoves : MonoBehaviour
         {
             pointerObj.position = hit.point;
             myNMA.destination = hit.point;
-            gameObject.transform.position = myNMA.destination;
         }
     }
 }
