@@ -11,6 +11,7 @@ public class PlayerMoves : MonoBehaviour
     //public VRTK.VRTK_ControllerEvents controllerEvent;
     public Transform pointerObj;
     public Transform target;
+    public GameObject player;
     private NavMeshAgent myNMA;
 
     public SteamVR_Input_ActionSet_WDCOF actionSetEnable;
@@ -37,7 +38,7 @@ public class PlayerMoves : MonoBehaviour
         {
             Walk();
         }
-        Walk();
+        //Walk();
     }
 
 
@@ -50,10 +51,8 @@ public class PlayerMoves : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 5f))
         {
             pointerObj.position = hit.point;
-            if (Input.GetKeyDown(KeyCode.Mouse0) /*|| controllerEvent.touchpadPressed*/)
-            {
-                myNMA.destination = hit.point;
-            }
+            myNMA.destination = hit.point;
+            gameObject.transform.position = myNMA.destination;
         }
     }
 }

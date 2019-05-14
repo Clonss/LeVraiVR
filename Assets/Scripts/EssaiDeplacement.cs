@@ -12,7 +12,7 @@ public class EssaiDeplacement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SteamVR_Actions._default.nomDeLaction.GetStateDown(SteamVR_Input_Sources.Any)) // besoin d'enregistrer l'action dans le set default de steam vr inputs
+        //if (SteamVR_Actions._default.nomDeLaction.GetStateDown(SteamVR_Input_Sources.Any)) // besoin d'enregistrer l'action dans le set default de steam vr inputs
         {
             //remplir ici
         }
