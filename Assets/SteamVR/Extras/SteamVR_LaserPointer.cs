@@ -23,6 +23,7 @@ namespace Valve.VR.Extras
         public event PointerEventHandler PointerIn;
         public event PointerEventHandler PointerOut;
         public event PointerEventHandler PointerClick;
+        public RaycastHit hit;
 
         Transform previousContact = null;
 
@@ -100,7 +101,7 @@ namespace Valve.VR.Extras
             float dist = 100f;
 
             Ray raycast = new Ray(transform.position, transform.forward);
-            RaycastHit hit;
+            
             bool bHit = Physics.Raycast(raycast, out hit);
 
             if (previousContact && previousContact != hit.transform)
