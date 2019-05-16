@@ -5,6 +5,9 @@ using Valve.VR.InteractionSystem;
 
 public class lockinTrigger : MonoBehaviour
 {
+
+    public GameObject trigger;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,8 @@ public class lockinTrigger : MonoBehaviour
         {
             transform.position = other.transform.position;
             transform.rotation = other.transform.rotation;
+            trigger.GetComponent<BoxCollider>().enabled = false;
+            Destroy(gameObject.GetComponent<Throwable>());
         }
     }
 }
