@@ -1,15 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class TriggerRouge : MonoBehaviour
 {
-    public Transform lockForm;
+    public GameObject trigger;
 
     // Start is called before the first frame update
     void Start()
     {
-        lockForm = GetComponent<Transform>();
+        
     }
 
     // Update is called once per frame
@@ -20,12 +21,12 @@ public class TriggerRouge : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        lockForm = GetComponent<Transform>();
         if (other.CompareTag("Rouge"))
         {
-            /*lockForm.eulerAngles = new Vector3(0, 0, 0);
-            gameObject.GetComponent<Rigidbody>().freezeRotation = true;*/
-            
+            transform.position = other.transform.position;
+            transform.rotation = other.transform.rotation;
+            trigger.GetComponent<BoxCollider>().enabled = false;
+            Destroy(gameObject.GetComponent<Throwable>());
         }
     }
 }
