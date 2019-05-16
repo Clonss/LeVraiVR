@@ -4,31 +4,32 @@ using UnityEngine;
 
 public class EnigmeCuisine : MonoBehaviour
 {
-    public GameObject ingr1;
-    public GameObject ingr2;
-    public GameObject ingr3;
+    public int nbrIngr;
 
     public bool ready;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        nbrIngr = 0;
+        ready = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Verify();
     }
 
-    private void OnTriggerStay(Collider other)
+    void Verify()
     {
-        /*if(other.gameObject == ingr1 && other.gameObject == ingr2 && other.gameObject == ingr3)
+        if(nbrIngr == 3)
         {
-            Debug.Log("oui");
-        }*/
-
-        Debug.Log(other);
+            ready = true;
+        }
+        else
+        {
+            ready = false;
+        }
     }
 }
