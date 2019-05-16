@@ -18,11 +18,11 @@ public class Vert : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Rouge"))
+        if (other.CompareTag("Vert") && )
         {
-            redIsHere = true;
+            greenIsHere = true;
         }
     }
 }

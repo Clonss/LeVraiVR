@@ -23,8 +23,9 @@ public class TriggerRouge : MonoBehaviour
         lockForm = GetComponent<Transform>();
         if (other.CompareTag("Rouge"))
         {
-            lockForm.eulerAngles = new Vector3(0, 0, 0);
-            gameObject.GetComponent<Rigidbody>().freezeRotation = true;
+            /*lockForm.eulerAngles = new Vector3(0, 0, 0);
+            gameObject.GetComponent<Rigidbody>().freezeRotation = true;*/
+            
         }
     }
 }
