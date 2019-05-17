@@ -20,7 +20,7 @@ public class Vert : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Vert") && )
+        if (other.CompareTag("Vert"))
         {
             greenIsHere = true;
         }

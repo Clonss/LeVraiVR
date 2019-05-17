@@ -7,6 +7,7 @@ public class EnigmeCuisine : MonoBehaviour
     public int nbrIngr;
 
     public bool ready;
+    public bool validate;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,14 @@ public class EnigmeCuisine : MonoBehaviour
         else
         {
             ready = false;
+        }
+    }
+
+    public void Validate()
+    {
+        if (ready)
+        {
+            validate = true;
         }
     }
 }
