@@ -22,6 +22,14 @@ public class Ingredient : MonoBehaviour
         other.gameObject.GetComponent<EnigmeCuisine>().nbrIngr++;
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.GetComponent<EnigmeCuisine>().cooking)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void OnTriggerExit(Collider other)
     {
         other.gameObject.GetComponent<EnigmeCuisine>().nbrIngr--;
