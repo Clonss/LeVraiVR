@@ -8,8 +8,6 @@ using Valve.VR.InteractionSystem;
 //[RequireComponent(typeof(SteamVR_TrackedController))]
 public class PlayerMoves : MonoBehaviour
 {
-    //public VRTK.VRTK_ControllerEvents controllerEvent;
-    public Transform pointerObj;
     public Transform target;
     public GameObject player;
     private NavMeshAgent myNMA;
@@ -21,17 +19,11 @@ public class PlayerMoves : MonoBehaviour
 
     [SerializeField]
 
-    //private SteamVR_TrackedController trackedController;
-
     // Start is called before the first frame update
     void Start()
     {
         myNMA = GetComponent<NavMeshAgent>();
-        //trackedController = GetComponent<SteamVR_TrackedController>();
-        //trackedController.PadClicked += Walk;
-
         actionSetEnable.Activate(SteamVR_Input_Sources.Any, 0, false);
-
         pointer = gameObject.GetComponent<Valve.VR.Extras.SteamVR_LaserPointer>();
     }
 
@@ -43,7 +35,6 @@ public class PlayerMoves : MonoBehaviour
             Walk();
             Debug.Log("oui");
         }
-        //Walk();
     }
 
 
