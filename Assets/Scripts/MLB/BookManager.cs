@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rouge : MonoBehaviour
+public class BookManager : MonoBehaviour
 {
-    public bool redIsHere = false;
-    
+    public GameObject fin;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +16,15 @@ public class Rouge : MonoBehaviour
     {
         
     }
-
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Rouge"))
+        if (other.CompareTag("Feu"))
         {
-            redIsHere = true;
+            Destroy(gameObject);
         }
+    }
+    private void OnDestroy()
+    {
+        fin.SetActive(true);
     }
 }

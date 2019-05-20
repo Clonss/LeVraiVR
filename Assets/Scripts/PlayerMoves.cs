@@ -33,7 +33,7 @@ public class PlayerMoves : MonoBehaviour
         if (SteamVR_Actions.WDCOF.PlayerMoves.GetStateDown(SteamVR_Input_Sources.Any) || Input.GetKeyDown(KeyCode.Mouse0))
         {
             Walk();
-            Debug.Log("oui");
+            Debug.Log(pointer.hit.point);
         }
     }
 

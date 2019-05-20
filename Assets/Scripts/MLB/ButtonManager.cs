@@ -2,27 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bleu : MonoBehaviour
+public class ButtonManager : MonoBehaviour
 {
-    public bool blueIsHere = false;
-    
+    public GameObject feu;
+
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
-
-    private void OnTriggerEnter(Collider other)
+    public void Activation()
     {
-        if (other.CompareTag("Bleu"))
-        {
-            blueIsHere = true;
-        }
+        feu.SetActive(!feu.activeSelf);
     }
 }

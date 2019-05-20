@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
 
-public class TriggerRouge : MonoBehaviour
+public class VerifLivre : MonoBehaviour
 {
-    public GameObject trigger;
+    public EnigmeChambre enigme;
 
     // Start is called before the first frame update
     void Start()
@@ -19,14 +19,20 @@ public class TriggerRouge : MonoBehaviour
         
     }
 
-    public void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Rouge"))
+        if (other.CompareTag(gameObject.tag))
+        {
+            enigme.count++;
+        }
+    }
+
+    public void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag(gameObject.tag))
         {
             transform.position = other.transform.position;
             transform.rotation = other.transform.rotation;
-            trigger.GetComponent<BoxCollider>().enabled = false;
-            Destroy(gameObject.GetComponent<Throwable>());
         }
     }
 }

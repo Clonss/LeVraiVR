@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vert : MonoBehaviour
+public class SoapObject : MonoBehaviour
 {
-    public bool greenIsHere = false;
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +17,4 @@ public class Vert : MonoBehaviour
     {
         
     }
-
-  /*  private void OnCollisionEnter(Collision collision)
-    {
-        if (other.CompareTag("Rouge"))
-        {
-            redIsHere = true;
-        }
-    }*/
 }
