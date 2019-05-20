@@ -10,6 +10,7 @@ TagManager:
   - Vert
   - Feu
   - Button
+  - Soap
   layers:
   - Default
   - TransparentFX
