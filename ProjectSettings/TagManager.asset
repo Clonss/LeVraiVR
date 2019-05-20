@@ -8,6 +8,8 @@ TagManager:
   - Rouge
   - Bleu
   - Vert
+  - Feu
+  - Button
   layers:
   - Default
   - TransparentFX

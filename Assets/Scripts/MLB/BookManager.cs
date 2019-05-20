@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vert : MonoBehaviour
+public class BookManager : MonoBehaviour
 {
-    public bool greenIsHere = false;
-    
+    public GameObject fin;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +16,15 @@ public class Vert : MonoBehaviour
     {
         
     }
-
-  /*  private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Rouge"))
+        if (other.CompareTag("Feu"))
         {
-            redIsHere = true;
+            Destroy(gameObject);
         }
-    }*/
+    }
+    private void OnDestroy()
+    {
+        fin.SetActive(true);
+    }
 }
