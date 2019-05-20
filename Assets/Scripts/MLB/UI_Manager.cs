@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UI_Manager : MonoBehaviour
@@ -50,5 +51,12 @@ public class UI_Manager : MonoBehaviour
     public void UpdateTimerDisplay()
     {
         timerText.text = timerValue.ToString("00:00");
+    }
+
+    public void ReturnMainMenu()
+    {
+        //SceneManager.LoadScene("SceneMaxG", LoadSceneMode.Additive);
+        //Application.LoadLevel("SceneMaxG");
+        SceneManager.LoadScene(1);
     }
 }
