@@ -18,27 +18,13 @@ public class Disque : MonoBehaviour
     {
         if(isTrue == true)
         {
-            spin();
+            transform.Rotate(0, 0.5f, 0 * Time.deltaTime);
         }
     }
 
-    void spin()
+    public void Spin()
     {
-        transform.Rotate(0, 0.5f, 0 * Time.deltaTime);
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.name == "Aiguille")
-        {
-            isTrue = true;
-            spot.SetActive(true);
-        }
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        isTrue = false;
-        spot.SetActive(false);
+        isTrue = true;
+        spot.SetActive(true);
     }
 }
