@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: 7c95a36ad0af12c4bac86b223335a0b5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: couette
+    100002: coussin_1
+    100004: coussin_2
+    100006: coussins
+    100008: "derri\xE8re"
+    100010: dessous
+    100012: devant
+    100014: Lit
+    100016: //RootNode
+    100018: Matelas
+    100020: part_1
+    100022: part_2
+    100024: part_3
+    100026: pied_1
+    100028: pied_2
+    100030: pied_3
+    100032: pied_4
+    400000: couette
+    400002: coussin_1
+    400004: coussin_2
+    400006: coussins
+    400008: "derri\xE8re"
+    400010: dessous
+    400012: devant
+    400014: Lit
+    400016: //RootNode
+    400018: Matelas
+    400020: part_1
+    400022: part_2
+    400024: part_3
+    400026: pied_1
+    400028: pied_2
+    400030: pied_3
+    400032: pied_4
+    2100000: lambert1
+    2300000: coussin_1
+    2300002: coussin_2
+    2300004: "derri\xE8re"
+    2300006: dessous
+    2300008: devant
+    2300010: Matelas
+    2300012: part_1
+    2300014: part_2
+    2300016: part_3
+    2300018: pied_1
+    2300020: pied_2
+    2300022: pied_3
+    2300024: pied_4
+    3300000: coussin_1
+    3300002: coussin_2
+    3300004: "derri\xE8re"
+    3300006: dessous
+    3300008: devant
+    3300010: Matelas
+    3300012: part_1
+    3300014: part_2
+    3300016: part_3
+    3300018: pied_1
+    3300020: pied_2
+    3300022: pied_3
+    3300024: pied_4
+    4300000: Matelas
+    4300002: pied_1
+    4300004: pied_2
+    4300006: pied_3
+    4300008: pied_4
+    4300010: devant
+    4300012: "derri\xE8re"
+    4300014: dessous
+    4300016: part_1
+    4300018: part_2
+    4300020: part_3
+    4300022: coussin_1
+    4300024: coussin_2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
