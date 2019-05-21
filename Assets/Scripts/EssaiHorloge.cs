@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class EssaiHorloge : MonoBehaviour
 {
-    private Vector3 rotationH;
+    private Vector3 heures;
 
     // Start is called before the first frame update
     void Start()
     {
-        rotationH = Vector3.zero;
-        rotationH.x = 0.25f;
+        heures = Vector3.zero;
+        heures.x = 0.25f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.Rotate(rotationH * Time.deltaTime);
+        gameObject.transform.Rotate(heures * Time.deltaTime);
     }
 }

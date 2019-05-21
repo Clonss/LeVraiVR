@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: a189c8e8f27e9f5488bd606caa0bcae8
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: "arri\xE8re"
+    100002: cote_droit_1
+    100004: cote_droit_2
+    100006: cote_gauche_1
+    100008: cote_gauche_2
+    100010: dessous_1
+    100012: dessous_2
+    100014: dessus
+    100016: devant
+    100018: devant_1
+    100020: devant_2
+    100022: droite
+    100024: gauche
+    100026: pied_1
+    100028: pied_2
+    100030: pied_3
+    100032: pied_4
+    100034: "poign\xE9e_1"
+    100036: "poign\xE9e_2"
+    100038: "poign\xE9es"
+    100040: soutien_1
+    100042: soutien_2
+    100044: table
+    100046: //RootNode
+    100048: tiroir_1
+    100050: tiroir_2
+    400000: "arri\xE8re"
+    400002: cote_droit_1
+    400004: cote_droit_2
+    400006: cote_gauche_1
+    400008: cote_gauche_2
+    400010: dessous_1
+    400012: dessous_2
+    400014: dessus
+    400016: devant
+    400018: devant_1
+    400020: devant_2
+    400022: droite
+    400024: gauche
+    400026: pied_1
+    400028: pied_2
+    400030: pied_3
+    400032: pied_4
+    400034: "poign\xE9e_1"
+    400036: "poign\xE9e_2"
+    400038: "poign\xE9es"
+    400040: soutien_1
+    400042: soutien_2
+    400044: table
+    400046: //RootNode
+    400048: tiroir_1
+    400050: tiroir_2
+    2100000: lambert1
+    2300000: "arri\xE8re"
+    2300002: cote_droit_1
+    2300004: cote_droit_2
+    2300006: cote_gauche_1
+    2300008: cote_gauche_2
+    2300010: dessous_1
+    2300012: dessous_2
+    2300014: dessus
+    2300016: devant
+    2300018: devant_1
+    2300020: devant_2
+    2300022: droite
+    2300024: gauche
+    2300026: pied_1
+    2300028: pied_2
+    2300030: pied_3
+    2300032: pied_4
+    2300034: "poign\xE9e_1"
+    2300036: "poign\xE9e_2"
+    2300038: soutien_1
+    2300040: soutien_2
+    3300000: "arri\xE8re"
+    3300002: cote_droit_1
+    3300004: cote_droit_2
+    3300006: cote_gauche_1
+    3300008: cote_gauche_2
+    3300010: dessous_1
+    3300012: dessous_2
+    3300014: dessus
+    3300016: devant
+    3300018: devant_1
+    3300020: devant_2
+    3300022: droite
+    3300024: gauche
+    3300026: pied_1
+    3300028: pied_2
+    3300030: pied_3
+    3300032: pied_4
+    3300034: "poign\xE9e_1"
+    3300036: "poign\xE9e_2"
+    3300038: soutien_1
+    3300040: soutien_2
+    4300000: devant_1
+    4300002: dessous_1
+    4300004: cote_droit_1
+    4300006: cote_gauche_1
+    4300008: devant_2
+    4300010: dessous_2
+    4300012: cote_droit_2
+    4300014: cote_gauche_2
+    4300016: pied_1
+    4300018: pied_2
+    4300020: pied_3
+    4300022: pied_4
+    4300024: dessus
+    4300026: gauche
+    4300028: droite
+    4300030: "arri\xE8re"
+    4300032: soutien_1
+    4300034: soutien_2
+    4300036: devant
+    4300038: "poign\xE9e_2"
+    4300040: "poign\xE9e_1"
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
