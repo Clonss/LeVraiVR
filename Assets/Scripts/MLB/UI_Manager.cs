@@ -10,6 +10,8 @@ public class UI_Manager : MonoBehaviour
     public Text timerText;
     private float objectif = 1200f;
     private float timerValue = 0f;
+    public float timer = 0;
+    public GameObject fondu;
 
     public static UI_Manager s_Singleton;
 
@@ -34,7 +36,9 @@ public class UI_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timerValue < objectif)
+        timer += Time.deltaTime;
+
+        if (timerValue < objectif)
         {
             timerValue += Time.deltaTime;
             UpdateTimerDisplay();
@@ -42,6 +46,10 @@ public class UI_Manager : MonoBehaviour
         if(timerValue >= objectif)
         {
             DisplayStatsScreen();
+        }
+        if(timer >= 2)
+        {
+            Destroy(fondu);
         }
     }
     public void DisplayStatsScreen()
