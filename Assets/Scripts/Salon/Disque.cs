@@ -6,6 +6,7 @@ public class Disque : MonoBehaviour
 {
     public bool isTrue = false;
     public GameObject spot;
+    public GameObject music;
 
     // Start is called before the first frame update
     void Start()
@@ -26,5 +27,6 @@ public class Disque : MonoBehaviour
     {
         isTrue = true;
         spot.SetActive(true);
+        music.SetActive(true);
     }
 }
