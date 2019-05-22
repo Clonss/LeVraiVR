@@ -412,5 +412,10 @@ namespace Valve.VR.InteractionSystem
 		{
 			//Do something appropriate here
 		}
+
+        public Transform GetPlayerCamera ()
+        {
+            return audioListener;
+        }
 	}
 }
