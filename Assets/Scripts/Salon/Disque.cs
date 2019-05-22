@@ -8,6 +8,7 @@ public class Disque : MonoBehaviour
     public GameObject spot;
     public GameObject music;
     public GameObject cochon;
+    public GameObject politesse;
 
     // Start is called before the first frame update
     void Start()
@@ -30,5 +31,6 @@ public class Disque : MonoBehaviour
         spot.SetActive(true);
         music.SetActive(true);
         cochon.SetActive(true);
+        politesse.SetActive(true);
     }
 }
