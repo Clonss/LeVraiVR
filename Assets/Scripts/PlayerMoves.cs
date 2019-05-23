@@ -30,7 +30,7 @@ public class PlayerMoves : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SteamVR_Actions.WDCOF.PlayerMoves.GetStateDown(SteamVR_Input_Sources.Any) || Input.GetKeyDown(KeyCode.Mouse0))
+        if (SteamVR_Actions.WDCOF.PlayerMoves.GetStateDown(SteamVR_Input_Sources.Any))
         {
             Walk();
             Debug.Log(pointer.hit.point);
