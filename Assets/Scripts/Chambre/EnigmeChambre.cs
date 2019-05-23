@@ -6,12 +6,14 @@ public class EnigmeChambre : MonoBehaviour
 {
     public int count;
     public bool validated;
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
         count = 0;
         validated = false;
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -25,10 +27,8 @@ public class EnigmeChambre : MonoBehaviour
         if(count == 3)
         {
             validated = true;
-        }
-        else
-        {
-            validated = false;
+            gameManager.ghostsNbr++;
+            count++;
         }
     }
 }

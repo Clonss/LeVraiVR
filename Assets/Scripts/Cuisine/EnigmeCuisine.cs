@@ -7,7 +7,7 @@ public class EnigmeCuisine : MonoBehaviour
     public int nbrIngr;
 
     public GameObject resultat;
-    private GameObject singleton;
+    private GameManager gameManager;
 
     public bool ready;
     public bool validate;
@@ -20,6 +20,7 @@ public class EnigmeCuisine : MonoBehaviour
         ready = false;
         validate = false;
         cooking = false;
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -61,6 +62,7 @@ public class EnigmeCuisine : MonoBehaviour
             nbrIngr = 0;
             cooking = true;
             validate = false;
+            gameManager.ghostsNbr++;
         }
     }
 }
