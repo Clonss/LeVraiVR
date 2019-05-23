@@ -18,5 +18,6 @@ public class ButtonManager : MonoBehaviour
     public void Activation()
     {
         feu.SetActive(!feu.activeSelf);
+        
     }
 }
