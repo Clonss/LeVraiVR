@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: bd23e9f4d391f004888ba1fe90cf246e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: arriere
+    100002: arriere 1
+    100004: arriere 2
+    100006: arriere 3
+    100008: arriere 4
+    100010: bas
+    100012: bas 1
+    100014: bas 2
+    100016: bas 3
+    100018: bas 4
+    100020: droite
+    100022: droite 1
+    100024: droite 2
+    100026: droite 3
+    100028: droite 4
+    100030: gauche
+    100032: gauche 1
+    100034: gauche 2
+    100036: gauche 3
+    100038: gauche 4
+    100040: Haut
+    100042: Haut 1
+    100044: Haut 2
+    100046: Haut 3
+    100048: Haut 4
+    100050: placard_1
+    100052: placard_2
+    100054: placard_3
+    100056: placard_4
+    100058: placard_5
+    100060: //RootNode
+    100062: porte_droite
+    100064: porte_droite 1
+    100066: porte_droite 2
+    100068: porte_droite 3
+    100070: porte_droite 4
+    100072: porte_gauche
+    100074: porte_gauche 1
+    100076: porte_gauche 2
+    100078: porte_gauche 3
+    100080: porte_gauche 4
+    400000: arriere
+    400002: arriere 1
+    400004: arriere 2
+    400006: arriere 3
+    400008: arriere 4
+    400010: bas
+    400012: bas 1
+    400014: bas 2
+    400016: bas 3
+    400018: bas 4
+    400020: droite
+    400022: droite 1
+    400024: droite 2
+    400026: droite 3
+    400028: droite 4
+    400030: gauche
+    400032: gauche 1
+    400034: gauche 2
+    400036: gauche 3
+    400038: gauche 4
+    400040: Haut
+    400042: Haut 1
+    400044: Haut 2
+    400046: Haut 3
+    400048: Haut 4
+    400050: placard_1
+    400052: placard_2
+    400054: placard_3
+    400056: placard_4
+    400058: placard_5
+    400060: //RootNode
+    400062: porte_droite
+    400064: porte_droite 1
+    400066: porte_droite 2
+    400068: porte_droite 3
+    400070: porte_droite 4
+    400072: porte_gauche
+    400074: porte_gauche 1
+    400076: porte_gauche 2
+    400078: porte_gauche 3
+    400080: porte_gauche 4
+    2100000: lambert1
+    2300000: arriere
+    2300002: arriere 1
+    2300004: arriere 2
+    2300006: arriere 3
+    2300008: arriere 4
+    2300010: bas
+    2300012: bas 1
+    2300014: bas 2
+    2300016: bas 3
+    2300018: bas 4
+    2300020: droite
+    2300022: droite 1
+    2300024: droite 2
+    2300026: droite 3
+    2300028: droite 4
+    2300030: gauche
+    2300032: gauche 1
+    2300034: gauche 2
+    2300036: gauche 3
+    2300038: gauche 4
+    2300040: Haut
+    2300042: Haut 1
+    2300044: Haut 2
+    2300046: Haut 3
+    2300048: Haut 4
+    2300050: porte_droite
+    2300052: porte_droite 1
+    2300054: porte_droite 2
+    2300056: porte_droite 3
+    2300058: porte_droite 4
+    2300060: porte_gauche
+    2300062: porte_gauche 1
+    2300064: porte_gauche 2
+    2300066: porte_gauche 3
+    2300068: porte_gauche 4
+    3300000: arriere
+    3300002: arriere 1
+    3300004: arriere 2
+    3300006: arriere 3
+    3300008: arriere 4
+    3300010: bas
+    3300012: bas 1
+    3300014: bas 2
+    3300016: bas 3
+    3300018: bas 4
+    3300020: droite
+    3300022: droite 1
+    3300024: droite 2
+    3300026: droite 3
+    3300028: droite 4
+    3300030: gauche
+    3300032: gauche 1
+    3300034: gauche 2
+    3300036: gauche 3
+    3300038: gauche 4
+    3300040: Haut
+    3300042: Haut 1
+    3300044: Haut 2
+    3300046: Haut 3
+    3300048: Haut 4
+    3300050: porte_droite
+    3300052: porte_droite 1
+    3300054: porte_droite 2
+    3300056: porte_droite 3
+    3300058: porte_droite 4
+    3300060: porte_gauche
+    3300062: porte_gauche 1
+    3300064: porte_gauche 2
+    3300066: porte_gauche 3
+    3300068: porte_gauche 4
+    4300000: bas
+    4300002: arriere
+    4300004: droite
+    4300006: gauche
+    4300008: Haut
+    4300010: porte_droite
+    4300012: porte_gauche
+    4300014: bas
+    4300016: arriere
+    4300018: droite
+    4300020: gauche
+    4300022: Haut
+    4300024: porte_droite
+    4300026: porte_gauche
+    4300028: bas
+    4300030: arriere
+    4300032: droite
+    4300034: gauche
+    4300036: Haut
+    4300038: porte_droite
+    4300040: porte_gauche
+    4300042: bas
+    4300044: arriere
+    4300046: droite
+    4300048: gauche
+    4300050: Haut
+    4300052: porte_droite
+    4300054: porte_gauche
+    4300056: bas
+    4300058: arriere
+    4300060: droite
+    4300062: gauche
+    4300064: Haut
+    4300066: porte_droite
+    4300068: porte_gauche
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

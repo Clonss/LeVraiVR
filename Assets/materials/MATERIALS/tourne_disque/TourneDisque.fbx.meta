@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: d7cea2db9b5dc094a8bc718332570e1e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Boite
+    100002: Bouton_1
+    100004: Bouton_2
+    100006: Bouton_3
+    100008: Bouton_4
+    100010: Bouton_5
+    100012: Boutons
+    100014: cadran
+    100016: Centre
+    100018: Couvercle
+    100020: Devant
+    100022: Disquage
+    100024: Doser
+    100026: Face_1
+    100028: Face_2
+    100030: fleche
+    100032: Part_1
+    100034: Part_1 1
+    100036: Part_2
+    100038: Part_2 1
+    100040: Part_3
+    100042: Part_4
+    100044: Tourne_Disque_1
+    100046: //RootNode
+    400000: Boite
+    400002: Bouton_1
+    400004: Bouton_2
+    400006: Bouton_3
+    400008: Bouton_4
+    400010: Bouton_5
+    400012: Boutons
+    400014: cadran
+    400016: Centre
+    400018: Couvercle
+    400020: Devant
+    400022: Disquage
+    400024: Doser
+    400026: Face_1
+    400028: Face_2
+    400030: fleche
+    400032: Part_1
+    400034: Part_1 1
+    400036: Part_2
+    400038: Part_2 1
+    400040: Part_3
+    400042: Part_4
+    400044: Tourne_Disque_1
+    400046: //RootNode
+    2100000: lambert1
+    2300000: Boite
+    2300002: Bouton_1
+    2300004: Bouton_2
+    2300006: Bouton_3
+    2300008: Bouton_4
+    2300010: Bouton_5
+    2300012: cadran
+    2300014: Centre
+    2300016: Doser
+    2300018: Face_1
+    2300020: Face_2
+    2300022: fleche
+    2300024: Part_1
+    2300026: Part_1 1
+    2300028: Part_2
+    2300030: Part_2 1
+    2300032: Part_3
+    2300034: Part_4
+    3300000: Boite
+    3300002: Bouton_1
+    3300004: Bouton_2
+    3300006: Bouton_3
+    3300008: Bouton_4
+    3300010: Bouton_5
+    3300012: cadran
+    3300014: Centre
+    3300016: Doser
+    3300018: Face_1
+    3300020: Face_2
+    3300022: fleche
+    3300024: Part_1
+    3300026: Part_1 1
+    3300028: Part_2
+    3300030: Part_2 1
+    3300032: Part_3
+    3300034: Part_4
+    4300000: Centre
+    4300002: Part_1
+    4300004: Part_2
+    4300006: Part_4
+    4300008: Doser
+    4300010: fleche
+    4300012: cadran
+    4300014: Face_1
+    4300016: Face_2
+    4300018: Bouton_1
+    4300020: Bouton_2
+    4300022: Bouton_3
+    4300024: Bouton_4
+    4300026: Bouton_5
+    4300028: Part_1
+    4300030: Part_2
+    4300032: Part_3
+    4300034: Boite
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

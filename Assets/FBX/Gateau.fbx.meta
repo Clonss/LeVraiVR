@@ -1,0 +1,233 @@
+fileFormatVersion: 2
+guid: ab730d15163e2534da4fd6060a12756f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: fraise_1
+    100002: fraise_2
+    100004: fraise_3
+    100006: fraise_4
+    100008: fraise_5
+    100010: fraise_6
+    100012: fraise_7
+    100014: fraise_8
+    100016: Fraises
+    100018: //RootNode
+    100020: Gateau 1
+    100022: point_1
+    100024: point_10
+    100026: point_11
+    100028: point_12
+    100030: point_13
+    100032: point_14
+    100034: point_15
+    100036: point_16
+    100038: point_17
+    100040: point_18
+    100042: point_2
+    100044: point_3
+    100046: point_4
+    100048: point_5
+    100050: point_6
+    100052: point_7
+    100054: point_8
+    100056: point_9
+    100058: Points
+    400000: fraise_1
+    400002: fraise_2
+    400004: fraise_3
+    400006: fraise_4
+    400008: fraise_5
+    400010: fraise_6
+    400012: fraise_7
+    400014: fraise_8
+    400016: Fraises
+    400018: //RootNode
+    400020: Gateau 1
+    400022: point_1
+    400024: point_10
+    400026: point_11
+    400028: point_12
+    400030: point_13
+    400032: point_14
+    400034: point_15
+    400036: point_16
+    400038: point_17
+    400040: point_18
+    400042: point_2
+    400044: point_3
+    400046: point_4
+    400048: point_5
+    400050: point_6
+    400052: point_7
+    400054: point_8
+    400056: point_9
+    400058: Points
+    2100000: lambert1
+    2300000: fraise_1
+    2300002: fraise_2
+    2300004: fraise_3
+    2300006: fraise_4
+    2300008: fraise_5
+    2300010: fraise_6
+    2300012: fraise_7
+    2300014: fraise_8
+    2300016: Gateau 1
+    2300018: point_1
+    2300020: point_10
+    2300022: point_11
+    2300024: point_12
+    2300026: point_13
+    2300028: point_14
+    2300030: point_15
+    2300032: point_16
+    2300034: point_17
+    2300036: point_18
+    2300038: point_2
+    2300040: point_3
+    2300042: point_4
+    2300044: point_5
+    2300046: point_6
+    2300048: point_7
+    2300050: point_8
+    2300052: point_9
+    3300000: fraise_1
+    3300002: fraise_2
+    3300004: fraise_3
+    3300006: fraise_4
+    3300008: fraise_5
+    3300010: fraise_6
+    3300012: fraise_7
+    3300014: fraise_8
+    3300016: Gateau 1
+    3300018: point_1
+    3300020: point_10
+    3300022: point_11
+    3300024: point_12
+    3300026: point_13
+    3300028: point_14
+    3300030: point_15
+    3300032: point_16
+    3300034: point_17
+    3300036: point_18
+    3300038: point_2
+    3300040: point_3
+    3300042: point_4
+    3300044: point_5
+    3300046: point_6
+    3300048: point_7
+    3300050: point_8
+    3300052: point_9
+    4300000: Gateau
+    4300002: fraise_1
+    4300004: fraise_2
+    4300006: fraise_3
+    4300008: fraise_4
+    4300010: fraise_5
+    4300012: fraise_6
+    4300014: fraise_7
+    4300016: fraise_8
+    4300018: point_1
+    4300020: point_2
+    4300022: point_3
+    4300024: point_4
+    4300026: point_5
+    4300028: point_6
+    4300030: point_7
+    4300032: point_8
+    4300034: point_9
+    4300036: point_10
+    4300038: point_11
+    4300040: point_12
+    4300042: point_13
+    4300044: point_14
+    4300046: point_15
+    4300048: point_16
+    4300050: point_17
+    4300052: point_18
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
