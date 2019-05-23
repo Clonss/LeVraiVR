@@ -5,6 +5,7 @@ using UnityEngine;
 public class BookManager : MonoBehaviour
 {
     public GameObject fin;
+    public GameObject feu;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,8 @@ public class BookManager : MonoBehaviour
         if (other.CompareTag("Feu"))
         {
             Destroy(gameObject);
+            Destroy(feu.GetComponent<AudioSource>());
+            
         }
     }
     private void OnDestroy()
