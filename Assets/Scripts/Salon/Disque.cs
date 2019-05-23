@@ -5,15 +5,18 @@ using UnityEngine;
 public class Disque : MonoBehaviour
 {
     public bool isTrue = false;
+
     public GameObject spot;
     public GameObject music;
     public GameObject cochon;
     public GameObject politesse;
 
+    private GameManager gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -28,9 +31,10 @@ public class Disque : MonoBehaviour
     public void Spin()
     {
         isTrue = true;
-        spot.SetActive(true);
+        /*spot.SetActive(true);
         music.SetActive(true);
         cochon.SetActive(true);
-        politesse.SetActive(true);
+        politesse.SetActive(true);*/
+        gameManager.ghostsNbr++;
     }
 }
