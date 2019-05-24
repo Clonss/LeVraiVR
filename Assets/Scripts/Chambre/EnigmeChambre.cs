@@ -7,6 +7,7 @@ public class EnigmeChambre : MonoBehaviour
     public int count;
     public bool validated;
     private GameManager gameManager;
+    public GameObject VFX;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class EnigmeChambre : MonoBehaviour
         if(count == 3)
         {
             validated = true;
+            VFX.SetActive(true);
             gameManager.ghostsNbr++;
             count++;
         }

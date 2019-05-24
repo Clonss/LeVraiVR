@@ -7,6 +7,7 @@ public class EnigmeCuisine : MonoBehaviour
     public int nbrIngr;
 
     public GameObject resultat;
+    public GameObject VFX;
     private GameManager gameManager;
 
     public bool ready;
@@ -59,6 +60,7 @@ public class EnigmeCuisine : MonoBehaviour
         if(validate == true)
         {
             Instantiate(resultat,gameObject.transform);
+            VFX.SetActive(true);
             nbrIngr = 0;
             cooking = true;
             validate = false;
