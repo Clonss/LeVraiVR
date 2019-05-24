@@ -31,10 +31,10 @@ public class Disque : MonoBehaviour
     public void Spin()
     {
         isTrue = true;
-        /*spot.SetActive(true);
+        //spot.SetActive(true);
         music.SetActive(true);
-        cochon.SetActive(true);
-        politesse.SetActive(true);*/
+        //cochon.SetActive(true);
+        //politesse.SetActive(true);
         gameManager.ghostsNbr++;
     }
 }
