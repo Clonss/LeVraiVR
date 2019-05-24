@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Scene_MLB.unity
-    guid: a2bd088698d0ef54cb2c269617348651
-  - enabled: 1
-    path: Assets/Scenes/SceneMaxG.unity
-    guid: 04fd1d18281e3394aae00ab28410df33
+    path: Assets/Scenes/SceneDuJeu.unity
+    guid: b6e99a183e7f4d6429154498e6e4c45c
   m_configObjects: {}
