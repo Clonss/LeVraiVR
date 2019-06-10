@@ -417,7 +417,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1596779741}
-        m_MethodName: Validate
+        m_MethodName: CheckFinal
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6191,8 +6191,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nbrIngr: 0
+  check: 0
   bake: 0
-  resultat: {fileID: 5819047795504426977, guid: 53c9bad1cbda56a4a85caf54deb6715f,
+  resultat: {fileID: 6665819732341756147, guid: 5602977f4523e274ab7e56f467be9f17,
     type: 3}
   VFX: {fileID: 763475651}
 --- !u!1 &1660506094

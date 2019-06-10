@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnigmeCuisine : MonoBehaviour
 {
     public int nbrIngr;
+    public bool check;
     public bool bake;
 
     public GameObject resultat;
@@ -19,6 +20,7 @@ public class EnigmeCuisine : MonoBehaviour
     {
         nbrIngr = 0;
         bake = false;
+        check = false;
         SetCakeTransform();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
@@ -26,28 +28,37 @@ public class EnigmeCuisine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        CheckIngr();
     }
 
     void SetCakeTransform()
     {
-        cakeTransform.position = gameObject.transform.position;
+        cakeTransform = gameObject.transform;
+        Debug.Log(cakeTransform.position);
     }
 
-    public void Check()
+     void CheckIngr()
     {
         if(nbrIngr == 3)
         {
-            Rewarded();
-            nbrIngr = 0;
+            check = true;
+        }
+        else
+        {
+            check = false;
         }
     }
 
-    void Rewarded()
+    public void CheckFinal()
     {
-        Instantiate(resultat,cakeTransform);
-        VFX.SetActive(true);
-        gameManager.ghostsNbr++;
-        bake = true;
+        if (check)
+        {
+            Instantiate(resultat, cakeTransform);
+            VFX.SetActive(true);
+            bake = true;
+            nbrIngr = 0;
+            gameManager.ghostsNbr++;
+        }
+        
     }
 }
