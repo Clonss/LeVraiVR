@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Garage.unity
     guid: 33641634ca7913645acd494e5cb35bd6
   - enabled: 1
-    path: Assets/Scenes/scene_new_manoir.unity
-    guid: b87ad1b89a574bb4197c76b02ef99fc6
+    path: Assets/Scenes/SceneDuJeu.unity
+    guid: b6e99a183e7f4d6429154498e6e4c45c
   m_configObjects: {}
