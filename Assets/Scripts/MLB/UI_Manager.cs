@@ -11,7 +11,9 @@ public class UI_Manager : MonoBehaviour
     private float objectif = 1200f;
     private float timerValue = 0f;
     public float timer = 0;
+    public float timer_deux = 0;
     public GameObject fondu;
+    public GameObject livre;
 
     public static UI_Manager s_Singleton;
 
@@ -50,6 +52,15 @@ public class UI_Manager : MonoBehaviour
         if(timer >= 2)
         {
             Destroy(fondu);
+        }
+
+        if(livre == false)
+        {
+            timer_deux += Time.deltaTime;
+            if (timer_deux >= 2)
+            {
+                SceneManager.LoadScene(2);
+            }
         }
     }
     public void DisplayStatsScreen()

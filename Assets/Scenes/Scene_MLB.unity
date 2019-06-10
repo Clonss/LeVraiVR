@@ -112,6 +112,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &12331414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1380763182085152307, guid: 107818dd2e640d645af22d0bd5079207,
+    type: 3}
+  m_PrefabInstance: {fileID: 4141710663212470708}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &67285349
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,12 +830,6 @@ MonoBehaviour:
   handFollowTransform: 1
   highlightOnHover: 1
   hideHighlight: []
---- !u!1 &1393175240 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4141710664503671676, guid: 107818dd2e640d645af22d0bd5079207,
-    type: 3}
-  m_PrefabInstance: {fileID: 4141710663212470708}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1400637914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,7 +1460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe581fceac2e8ce44883deb7eed2ef92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fin: {fileID: 1393175240}
+  fin: {fileID: 12331414}
   feu: {fileID: 1867200459}
 --- !u!1 &1918531130
 GameObject:
@@ -1700,6 +1700,31 @@ PrefabInstance:
     - target: {fileID: 4141710663651556420, guid: 107818dd2e640d645af22d0bd5079207,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141710663651556421, guid: 107818dd2e640d645af22d0bd5079207,
+        type: 3}
+      propertyPath: livre
+      value: 
+      objectReference: {fileID: 1880842925}
+    - target: {fileID: 4141710664783440472, guid: 107818dd2e640d645af22d0bd5079207,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141710664783440472, guid: 107818dd2e640d645af22d0bd5079207,
+        type: 3}
+      propertyPath: m_Name
+      value: "Fondu Noir entr\xE9e"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141710664783440472, guid: 107818dd2e640d645af22d0bd5079207,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380763182085152307, guid: 107818dd2e640d645af22d0bd5079207,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
