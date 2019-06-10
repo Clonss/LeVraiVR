@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SceneMaxG.unity
     guid: 04fd1d18281e3394aae00ab28410df33
+  - enabled: 1
+    path: Assets/Scenes/Garage.unity
+    guid: 33641634ca7913645acd494e5cb35bd6
+  - enabled: 1
+    path: Assets/Scenes/scene_new_manoir.unity
+    guid: b87ad1b89a574bb4197c76b02ef99fc6
   m_configObjects: {}

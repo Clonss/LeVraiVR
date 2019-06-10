@@ -22,7 +22,7 @@ public class LevierManager : MonoBehaviour
         }
         if (timer >= 2)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(3);
         }
     }
 
