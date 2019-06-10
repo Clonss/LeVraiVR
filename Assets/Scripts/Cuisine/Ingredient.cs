@@ -24,7 +24,7 @@ public class Ingredient : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.GetComponent<EnigmeCuisine>().cooking)
+        if (other.gameObject.GetComponent<EnigmeCuisine>().bake)
         {
             Destroy(gameObject);
         }
