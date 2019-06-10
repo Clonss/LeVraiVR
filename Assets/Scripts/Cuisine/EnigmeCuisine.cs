@@ -26,7 +26,7 @@ public class EnigmeCuisine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Check();
+
     }
 
     void SetCakeTransform()
@@ -34,7 +34,7 @@ public class EnigmeCuisine : MonoBehaviour
         cakeTransform.position = gameObject.transform.position;
     }
 
-    void Check()
+    public void Check()
     {
         if(nbrIngr == 3)
         {
