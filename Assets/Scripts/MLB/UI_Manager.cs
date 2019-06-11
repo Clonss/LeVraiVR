@@ -55,7 +55,7 @@ public class UI_Manager : MonoBehaviour
             Destroy(fondu);
         }
 
-        if(livre == false && mainScene == false)
+        if(livre == false && mainScene == true)
         {
             timer_deux += Time.deltaTime;
             if (timer_deux >= 2)
