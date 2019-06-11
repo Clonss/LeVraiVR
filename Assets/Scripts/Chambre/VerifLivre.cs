@@ -35,4 +35,12 @@ public class VerifLivre : MonoBehaviour
             transform.rotation = other.transform.rotation;
         }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag(gameObject.tag))
+        {
+            enigme.count--;
+        }
+    }
 }
