@@ -14,6 +14,7 @@ public class UI_Manager : MonoBehaviour
     public float timer_deux = 0;
     public GameObject fondu;
     public GameObject livre;
+    public GameObject mainScene;
 
     public static UI_Manager s_Singleton;
 
@@ -54,7 +55,7 @@ public class UI_Manager : MonoBehaviour
             Destroy(fondu);
         }
 
-        if(livre == false)
+        if(livre == false && mainScene == false)
         {
             timer_deux += Time.deltaTime;
             if (timer_deux >= 2)

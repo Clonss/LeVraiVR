@@ -436,6 +436,11 @@ PrefabInstance:
       propertyPath: fondu
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8580656396524756377, guid: ef9d25e21c35fa2489e1e4834f057723,
+        type: 3}
+      propertyPath: axisOfRotation
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9d25e21c35fa2489e1e4834f057723, type: 3}
 --- !u!1001 &453157608
@@ -554,11 +559,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4141710664783440472, guid: 107818dd2e640d645af22d0bd5079207,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107818dd2e640d645af22d0bd5079207, type: 3}
