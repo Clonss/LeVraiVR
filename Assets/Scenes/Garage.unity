@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028377, g: 0.22571409, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -310,7 +310,7 @@ PrefabInstance:
     - target: {fileID: 5556315085290474116, guid: ee02190db6d825147ad01108b957b1a2,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5556315085290699516, guid: ee02190db6d825147ad01108b957b1a2,
         type: 3}
@@ -365,6 +365,26 @@ PrefabInstance:
     - target: {fileID: 5556315085290699516, guid: ee02190db6d825147ad01108b957b1a2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141710664007963145, guid: ee02190db6d825147ad01108b957b1a2,
+        type: 3}
+      propertyPath: levier
+      value: 
+      objectReference: {fileID: 2141815102}
+    - target: {fileID: 4141710664007963145, guid: ee02190db6d825147ad01108b957b1a2,
+        type: 3}
+      propertyPath: fonduFin
+      value: 
+      objectReference: {fileID: 1292224345}
+    - target: {fileID: 4141710665022473236, guid: ee02190db6d825147ad01108b957b1a2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380763182248636543, guid: ee02190db6d825147ad01108b957b1a2,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1380763182248636528, guid: ee02190db6d825147ad01108b957b1a2,
@@ -523,3 +543,9 @@ PrefabInstance:
       objectReference: {fileID: 1292224345}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9d25e21c35fa2489e1e4834f057723, type: 3}
+--- !u!1 &2141815102 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8580656396524756376, guid: ef9d25e21c35fa2489e1e4834f057723,
+    type: 3}
+  m_PrefabInstance: {fileID: 2141815101}
+  m_PrefabAsset: {fileID: 0}

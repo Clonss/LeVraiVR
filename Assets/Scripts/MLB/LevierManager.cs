@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LevierManager : MonoBehaviour
 {
-    public GameObject fondu;
     public float timer;
+    public bool activation = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +16,11 @@ public class LevierManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(fondu.active == true)
+        if(activation == true)
         {
             timer += Time.deltaTime;
         }
-        if (timer >= 2)
+        if (timer >= 3)
         {
             SceneManager.LoadScene(3);
         }
@@ -28,6 +28,6 @@ public class LevierManager : MonoBehaviour
 
     public void OnleverDown()
     {
-        fondu.SetActive(true);
+        activation = true;
     }
 }

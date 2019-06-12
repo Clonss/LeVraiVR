@@ -13,8 +13,10 @@ public class UI_Manager : MonoBehaviour
     public float timer = 0;
     public float timer_deux = 0;
     public GameObject fondu;
+    public GameObject fonduFin;
     public GameObject livre;
     public GameObject mainScene;
+    public GameObject levier;
 
     public static UI_Manager s_Singleton;
 
@@ -57,11 +59,17 @@ public class UI_Manager : MonoBehaviour
 
         if(livre == false && mainScene == true)
         {
+            fonduFin.SetActive(true);
             timer_deux += Time.deltaTime;
-            if (timer_deux >= 2)
+            if (timer_deux >= 3)
             {
                 SceneManager.LoadScene(2);
             }
+        }
+
+        if(levier.GetComponent<LevierManager>().activation == true && levier == true)
+        {
+            fonduFin.SetActive(true);
         }
     }
     public void DisplayStatsScreen()
