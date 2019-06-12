@@ -28,7 +28,7 @@ public class EnigmeChambre : MonoBehaviour
         if(count == 3)
         {
             validated = true;
-            VFX.SetActive(true);
+            //VFX.SetActive(true);
             count = 0;
             gameManager.ghostsNbr++;
         }
