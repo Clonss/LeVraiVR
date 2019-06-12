@@ -223,6 +223,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1380763182248636528, guid: ee02190db6d825147ad01108b957b1a2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6.200012
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee02190db6d825147ad01108b957b1a2, type: 3}
 --- !u!1 &477064456
@@ -561,7 +566,7 @@ Transform:
   m_Children:
   - {fileID: 1772273411}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &628556903
 MonoBehaviour:
@@ -1109,7 +1114,7 @@ Transform:
   m_Children:
   - {fileID: 1112614817}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1682640469
 MonoBehaviour:
