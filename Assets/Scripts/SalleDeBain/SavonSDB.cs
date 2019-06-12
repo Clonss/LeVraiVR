@@ -9,6 +9,8 @@ public class SavonSDB : MonoBehaviour
     public GameObject firstObject;
     public GameObject secondObject;
 
+    public bool check;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,7 @@ public class SavonSDB : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        CheckFinal();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -29,6 +31,10 @@ public class SavonSDB : MonoBehaviour
             triggerFirstObject = other.gameObject;
             Debug.Log(triggerFirstObject.name);
         }
+        else if(secondObject == null)
+        {
+            check = true;
+        }
 
         if(secondObject != null)
         {
@@ -37,7 +43,18 @@ public class SavonSDB : MonoBehaviour
                 triggerSecondObject = other.gameObject;
                 Debug.Log(triggerSecondObject.name);
             }
+            else
+            {
+                check = true;
+            }
         }
-        
+    }
+
+    void CheckFinal()
+    {
+        if(check == true)
+        {
+            //incrementer dans le EnigmeSalleDeBain
+        }
     }
 }
