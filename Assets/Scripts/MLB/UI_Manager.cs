@@ -50,7 +50,7 @@ public class UI_Manager : MonoBehaviour
         {
             DisplayStatsScreen();
         }
-        if(timer >= 2)
+        if(timer >= 3)
         {
             Destroy(fondu);
         }
