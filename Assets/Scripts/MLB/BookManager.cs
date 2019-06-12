@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BookManager : MonoBehaviour
 {
-    public GameObject fin;
+    public GameObject end;
     public GameObject feu;
     
     // Start is called before the first frame update
@@ -29,6 +29,6 @@ public class BookManager : MonoBehaviour
     }
     private void OnDestroy()
     {
-        fin.SetActive(true);
+        end.GetComponent<UI_Manager>().chiffre = 1;
     }
 }

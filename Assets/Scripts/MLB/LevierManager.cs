@@ -16,14 +16,6 @@ public class LevierManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(activation == true)
-        {
-            timer += Time.deltaTime;
-        }
-        if (timer >= 3)
-        {
-            SceneManager.LoadScene(3);
-        }
     }
 
     public void OnleverDown()
