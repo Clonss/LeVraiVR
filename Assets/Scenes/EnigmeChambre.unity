@@ -1345,7 +1345,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   count: 0
   validated: 0
-  VFX: {fileID: 0}
 --- !u!1 &1880886687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,7 +1440,7 @@ Transform:
   m_GameObject: {fileID: 1910062382}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.4143797, y: -0.34873772, z: -1.8546224}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.13242699, y: 0.13242699, z: 0.13242699}
   m_Children: []
   m_Father: {fileID: 1804700879}
   m_RootOrder: 0
@@ -1491,6 +1490,10 @@ MonoBehaviour:
   ghostsNbr: 0
   maxTime: 0
   actualTime: 0
+  unlockedDad: 0
+  unlockedMom: 0
+  unlockedGranma: 0
+  unlockedAunt: 0
   player: {fileID: 0}
 --- !u!4 &2120940931
 Transform:
