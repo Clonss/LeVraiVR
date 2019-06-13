@@ -2807,6 +2807,11 @@ PrefabInstance:
       propertyPath: pointerObj
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5556315085544285567, guid: ee02190db6d825147ad01108b957b1a2,
+        type: 3}
+      propertyPath: m_Speed
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee02190db6d825147ad01108b957b1a2, type: 3}
 --- !u!1001 &8580656396058780938
