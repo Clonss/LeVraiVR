@@ -88,7 +88,7 @@ public class UI_Manager : MonoBehaviour
         {
             fonduFin.SetActive(true);
             timer_deux += Time.deltaTime;
-            if (timer_deux >= 3)
+            if (timer_deux >= 2)
             {
                 SceneManager.LoadScene(2);
             }
@@ -98,7 +98,7 @@ public class UI_Manager : MonoBehaviour
         {
             fonduFin.SetActive(true);
             timer_deux += Time.deltaTime;
-            if (timer_deux >= 3)
+            if (timer_deux >= 2)
             {
                 SceneManager.LoadScene(3);
             }
