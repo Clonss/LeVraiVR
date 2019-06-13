@@ -9,7 +9,10 @@ public class SavonSDB : MonoBehaviour
     public GameObject firstObject;
     public GameObject secondObject;
 
+    public EnigmeSalleDeBain sdbManager;
+
     public bool check;
+    private bool validated;
 
     // Start is called before the first frame update
     void Start()
@@ -26,26 +29,73 @@ public class SavonSDB : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (triggerFirstObject.name != firstObject.name)
+        if (triggerFirstObject != firstObject)
         {
             triggerFirstObject = other.gameObject;
-            Debug.Log(triggerFirstObject.name);
-        }
-        else if(secondObject == null)
-        {
-            check = true;
         }
 
         if(secondObject != null)
         {
-            if (triggerSecondObject.name != secondObject.name)
+            if (triggerSecondObject != secondObject)
             {
                 triggerSecondObject = other.gameObject;
-                Debug.Log(triggerSecondObject.name);
+            }
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(secondObject == null)
+        {
+            if(triggerFirstObject == firstObject)
+            {
+                check = true;
             }
             else
             {
+                check = false;
+            }
+        }
+        else if(triggerSecondObject == secondObject)
+        {
+            if(triggerFirstObject == firstObject)
+            {
                 check = true;
+            }
+            else
+            {
+                check = false;
+            }
+        }
+        else
+        {
+            check = false;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (triggerFirstObject == firstObject && other.gameObject == triggerFirstObject)
+        {
+            triggerFirstObject = gameObject;
+            if (validated)
+            {
+                sdbManager.count--;
+                validated = false;
+            }
+            
+        }
+
+        if (secondObject != null)
+        {
+            if (triggerSecondObject == secondObject && other.gameObject == triggerSecondObject)
+            {
+                triggerSecondObject = gameObject;
+                if (validated)
+                {
+                    sdbManager.count--;
+                    validated = false;
+                }
             }
         }
     }
@@ -54,7 +104,11 @@ public class SavonSDB : MonoBehaviour
     {
         if(check == true)
         {
-            //incrementer dans le EnigmeSalleDeBain
+            if (validated == false)
+            {
+                sdbManager.count++;
+                validated = true;
+            }
         }
     }
 }

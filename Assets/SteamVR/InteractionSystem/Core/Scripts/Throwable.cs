@@ -134,6 +134,7 @@ namespace Valve.VR.InteractionSystem
 		{
             //Debug.Log("<b>[SteamVR Interaction]</b> Pickup: " + hand.GetGrabStarting().ToString());
 
+
             hadInterpolation = this.rigidbody.interpolation;
 
             attached = true;
