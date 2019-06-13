@@ -6,14 +6,12 @@ public class TakeIt : MonoBehaviour
 {
     private Rigidbody rB;
     public AudioSource grabSound;
-    public ParticleSystem fallVFX;
     public bool grabbed = false;
     private bool clipEnded = false;
 
     public void Start()
     {
         rB = GetComponent<Rigidbody>();
-        fallVFX = GetComponent<ParticleSystem>();
     }
 
     public void Update()
@@ -48,15 +46,5 @@ public class TakeIt : MonoBehaviour
     void SoundEnded()
     {
         grabbed = false;
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            fallVFX.Play();
-            ParticleSystem.ShapeModule _editableShape = fallVFX.shape;
-            _editableShape.position = new Vector3(1f, 2f, 3f);
-        }
     }
 }

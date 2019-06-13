@@ -438,7 +438,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabSound: {fileID: 0}
-  fallVFX: {fileID: 0}
   grabbed: 0
 --- !u!1 &95391533
 GameObject:
@@ -5602,6 +5601,7 @@ GameObject:
   - component: {fileID: 1099658418}
   - component: {fileID: 1099658422}
   - component: {fileID: 1099658423}
+  - component: {fileID: 1099658424}
   m_Layer: 0
   m_Name: Ingr1
   m_TagString: Untagged
@@ -5774,8 +5774,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabSound: {fileID: 535125369}
-  fallVFX: {fileID: 7415429333011083396, guid: 90d3985aeee3bdd448c41f18d04e6da3, type: 3}
   grabbed: 0
+--- !u!114 &1099658424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099658415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1568201d16ce54d9ce831ca2d93fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallVFX: {fileID: 1684005374}
 --- !u!1001 &1179475970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5792,6 +5804,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415429333011083396, guid: 90d3985aeee3bdd448c41f18d04e6da3,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415429333011083396, guid: 90d3985aeee3bdd448c41f18d04e6da3,
+        type: 3}
+      propertyPath: lengthInSec
+      value: 9.42
       objectReference: {fileID: 0}
     - target: {fileID: 7415429333011083397, guid: 90d3985aeee3bdd448c41f18d04e6da3,
         type: 3}
@@ -5847,11 +5869,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415429333011083396, guid: 90d3985aeee3bdd448c41f18d04e6da3,
-        type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 1.68
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90d3985aeee3bdd448c41f18d04e6da3, type: 3}
@@ -6120,7 +6137,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabSound: {fileID: 0}
-  fallVFX: {fileID: 0}
   grabbed: 0
 --- !u!1 &1303676242
 GameObject:
@@ -6559,6 +6575,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &1684005374 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7415429333011083396, guid: 90d3985aeee3bdd448c41f18d04e6da3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1179475970}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1710948489
 GameObject:
   m_ObjectHideFlags: 0

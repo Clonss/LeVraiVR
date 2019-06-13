@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    [SerializeField]
-    public GameObject target;
+    public ParticleSystem fallVFX;
+    bool onGround = false;
+    bool fallOnGround = false;
 
     void Start()
     {
@@ -14,7 +15,15 @@ public class Test : MonoBehaviour
 
     void Update()
     {
-        Vector3 dir = (target.transform.position - this.transform.position).normalized;
-        this.transform.position = dir * Time.deltaTime;
+        
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Ground" && fallOnGround && onGround)
+        {
+            fallVFX.Play();
+            Destroy(fallVFX, 0.5f);
+        }
     }
 }
