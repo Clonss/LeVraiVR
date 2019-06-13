@@ -761,7 +761,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 125.039, y: -95.630005, z: -67.462006}
 --- !u!1 &236693826 stripped
 GameObject:
@@ -1836,7 +1836,7 @@ PrefabInstance:
         type: 3}
       propertyPath: mainScene
       value: 
-      objectReference: {fileID: 1354848886}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee02190db6d825147ad01108b957b1a2, type: 3}
 --- !u!20 &512130419 stripped
@@ -2020,7 +2020,7 @@ PrefabInstance:
     - target: {fileID: 881047130264140245, guid: 0a626100c98ed8f41bd7aa3ee32362b9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 881047130264140245, guid: 0a626100c98ed8f41bd7aa3ee32362b9,
         type: 3}
@@ -5444,36 +5444,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1288023257}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1354848886
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1354848887}
-  m_Layer: 0
-  m_Name: MainGame
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1354848887
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354848886}
-  m_LocalRotation: {x: 0.6853313, y: 0.046458468, z: 0.3746393, w: 0.6227424}
-  m_LocalPosition: {x: -21.12, y: 15.19, z: 4.9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1355199812 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400060, guid: bd23e9f4d391f004888ba1fe90cf246e,
