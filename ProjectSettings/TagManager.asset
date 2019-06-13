@@ -11,6 +11,8 @@ TagManager:
   - Feu
   - Button
   - Soap
+  - Aiguille
+  - Ground
   layers:
   - Default
   - TransparentFX
