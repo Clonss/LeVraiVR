@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EssaiMinute : MonoBehaviour
+public class HorlogeHeure : MonoBehaviour
 {
-    private Vector3 minutes;
+    private Vector3 heures;
 
     // Start is called before the first frame update
     void Start()
     {
-        minutes = Vector3.zero;
-        minutes.x = 3f;
+        heures = Vector3.zero;
+        heures.x = 0.25f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.Rotate(minutes * Time.deltaTime);
+        gameObject.transform.Rotate(heures * Time.deltaTime);
     }
 }

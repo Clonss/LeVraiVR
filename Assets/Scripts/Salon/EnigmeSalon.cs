@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Disque : MonoBehaviour
+public class EnigmeSalon : MonoBehaviour
 {
     public bool isTrue = false;
 
-    public GameObject spot;
+    public GameObject lights;
     public GameObject music;
-    public GameObject cochon;
-    public GameObject politesse;
+    public GameObject ghost;
 
     private GameManager gameManager;
 
@@ -31,10 +30,7 @@ public class Disque : MonoBehaviour
     public void Spin()
     {
         isTrue = true;
-        //spot.SetActive(true);
         music.SetActive(true);
-        //cochon.SetActive(true);
-        //politesse.SetActive(true);
         gameManager.ghostsNbr++;
     }
 }

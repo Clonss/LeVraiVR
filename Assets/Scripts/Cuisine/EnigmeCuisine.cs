@@ -56,9 +56,9 @@ public class EnigmeCuisine : MonoBehaviour
             Instantiate(resultat, cakeTransform);
             VFX.SetActive(true);
             bake = true;
+            check = false;
             nbrIngr = 0;
             gameManager.ghostsNbr++;
         }
-        
     }
 }

@@ -9,6 +9,11 @@ public class GameManager : MonoBehaviour
     public float maxTime;
     public float actualTime;
 
+    public bool unlockedDad;
+    public bool unlockedMom;
+    public bool unlockedGranma;
+    public bool unlockedAunt;
+
     public GameObject player;
 
     // Start is called before the first frame update
