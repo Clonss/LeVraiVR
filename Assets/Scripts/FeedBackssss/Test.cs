@@ -5,25 +5,39 @@ using UnityEngine;
 public class Test : MonoBehaviour
 {
     public ParticleSystem fallVFX;
-    bool onGround = false;
-    bool fallOnGround = false;
+    bool onGround = true;
 
     void Start()
     {
         
     }
 
+    private void FixedUpdate()
+    {
+        if (onGround)
+        {
+            fallVFX.transform.position = transform.position;
+            fallVFX.Play();
+        }
+    }
+
     void Update()
     {
-        
+
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Ground" && fallOnGround && onGround)
+        if (collision.gameObject.tag == "Ground")
         {
-            fallVFX.Play();
-            Destroy(fallVFX, 0.5f);
+            onGround = false;
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            onGround = true;
         }
     }
 }
