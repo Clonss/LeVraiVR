@@ -5,7 +5,7 @@ using UnityEngine;
 public class TakeIt : MonoBehaviour
 {
     private Rigidbody rB;
-    public AudioSource pouf;
+    public AudioSource grabSound;
     public bool grabbed = false;
     private bool clipEnded = false;
 
@@ -20,7 +20,8 @@ public class TakeIt : MonoBehaviour
         {
             Grab();
         }
-        if(pouf.time == pouf.clip.length)
+
+        if(grabSound.time == grabSound.clip.length)
         {
             clipEnded = true;
             if (!rB.isKinematic)
@@ -28,6 +29,7 @@ public class TakeIt : MonoBehaviour
                 SoundEnded();
             }
         }
+
         if (!rB.isKinematic && clipEnded)
         {
             clipEnded = false;
@@ -37,7 +39,7 @@ public class TakeIt : MonoBehaviour
 
     void Grab()
     {
-        pouf.Play();
+        grabSound.Play();
         grabbed = true;
     }
 
