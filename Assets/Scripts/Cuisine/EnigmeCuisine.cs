@@ -59,6 +59,7 @@ public class EnigmeCuisine : MonoBehaviour
             check = false;
             nbrIngr = 0;
             gameManager.ghostsNbr++;
+            gameManager.unlockedGranma = true;
         }
     }
 }

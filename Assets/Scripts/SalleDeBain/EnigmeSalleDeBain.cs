@@ -30,6 +30,7 @@ public class EnigmeSalleDeBain : MonoBehaviour
             gameManager.ghostsNbr++;
             count = 0;
             validated = true;
+            gameManager.unlockedAunt = true;
         }
     }
 }

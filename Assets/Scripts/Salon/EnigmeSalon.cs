@@ -32,5 +32,6 @@ public class EnigmeSalon : MonoBehaviour
         isTrue = true;
         music.SetActive(true);
         gameManager.ghostsNbr++;
+        gameManager.unlockedDad = true;
     }
 }
