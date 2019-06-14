@@ -29,6 +29,7 @@ public class EnigmeChambre : MonoBehaviour
             validated = true;
             count = 0;
             gameManager.ghostsNbr++;
+            gameManager.unlockedMom = true;
         }
     }
 }
