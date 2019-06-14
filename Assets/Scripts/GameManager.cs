@@ -9,10 +9,19 @@ public class GameManager : MonoBehaviour
     public float maxTime;
     public float actualTime;
 
-    public bool unlockedDad;
-    public bool unlockedMom;
-    public bool unlockedGranma;
-    public bool unlockedAunt;
+    public bool unlockedDad = false;
+    public bool unlockedMom = false;
+    public bool unlockedGrandma = false;
+    public bool unlockedAunt = false;
+
+    public GameObject dadDecouvert;
+    public GameObject dadNonDecouvert;
+    public GameObject momDecouvert;
+    public GameObject momNonDecouvert;
+    public GameObject auntDecouvert;
+    public GameObject auntNonDecouvert;
+    public GameObject gmDecouvert;
+    public GameObject gmNonDecouvert;
 
     public GameObject player;
 
@@ -26,6 +35,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         Timer();
+        UnlockPages();
     }
 
     void Set()
@@ -44,6 +54,32 @@ public class GameManager : MonoBehaviour
         else
         {
             actualTime -= Time.deltaTime;
+        }
+    }
+    public void UnlockPages()
+    {
+
+
+
+        if(unlockedDad == true)
+        {
+            dadDecouvert.SetActive(true);
+            dadNonDecouvert.SetActive(false);
+        }
+        if (unlockedMom == true)
+        {
+            momDecouvert.SetActive(true);
+            momNonDecouvert.SetActive(false);
+        }
+        if (unlockedAunt == true)
+        {
+            auntDecouvert.SetActive(true);
+            auntNonDecouvert.SetActive(false);
+        }
+        if (unlockedGrandma == true)
+        {
+            gmDecouvert.SetActive(true);
+            gmNonDecouvert.SetActive(false);
         }
     }
 }

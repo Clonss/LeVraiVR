@@ -429,6 +429,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enigme: {fileID: 1498010063}
+--- !u!1 &37807288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5044738201587497979, guid: 54d625b36c947584b8c33bed13e5d0af,
+    type: 3}
+  m_PrefabInstance: {fileID: 5378964735880187239}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &57550120 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100010, guid: 33e44c2c8118c2e41ac7f30fd98d1ecd,
@@ -681,8 +687,16 @@ MonoBehaviour:
   actualTime: 0
   unlockedDad: 0
   unlockedMom: 0
-  unlockedGranma: 0
+  unlockedGrandma: 0
   unlockedAunt: 0
+  dadDecouvert: {fileID: 1900424270}
+  dadNonDecouvert: {fileID: 1782801043}
+  momDecouvert: {fileID: 1902198745}
+  momNonDecouvert: {fileID: 1273696556}
+  auntDecouvert: {fileID: 1716594280}
+  auntNonDecouvert: {fileID: 1313510262}
+  gmDecouvert: {fileID: 476019584}
+  gmNonDecouvert: {fileID: 37807288}
   player: {fileID: 0}
 --- !u!4 &205384273
 Transform:
@@ -1639,6 +1653,12 @@ MonoBehaviour:
   handFollowTransform: 1
   highlightOnHover: 1
   hideHighlight: []
+--- !u!1 &476019584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1335455848605367550, guid: 54d625b36c947584b8c33bed13e5d0af,
+    type: 3}
+  m_PrefabInstance: {fileID: 5378964735880187239}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &481835841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4976,6 +4996,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 97.862, y: 41.515, z: 24.582993}
+--- !u!1 &1273696556 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5489920424250582933, guid: 54d625b36c947584b8c33bed13e5d0af,
+    type: 3}
+  m_PrefabInstance: {fileID: 5378964735880187239}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1274290232
 GameObject:
   m_ObjectHideFlags: 0
@@ -5373,6 +5399,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: a3b1975f970b0854381e7114f705205a,
     type: 3}
   m_PrefabInstance: {fileID: 1288023257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1313510262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4730826246135288630, guid: 54d625b36c947584b8c33bed13e5d0af,
+    type: 3}
+  m_PrefabInstance: {fileID: 5378964735880187239}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1355199812 stripped
 Transform:
@@ -16519,6 +16551,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: a3b1975f970b0854381e7114f705205a, type: 3}
+--- !u!1 &1716594280 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4651306444397995997, guid: 54d625b36c947584b8c33bed13e5d0af,
+    type: 3}
+  m_PrefabInstance: {fileID: 5378964735880187239}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1730315135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16737,6 +16775,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enigme: {fileID: 1498010063}
+--- !u!1 &1782801043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5762961078115898542, guid: 54d625b36c947584b8c33bed13e5d0af,
+    type: 3}
+  m_PrefabInstance: {fileID: 5378964735880187239}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1791630156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17367,6 +17411,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 04fefc3aa91e71444b5e3f0b4f1ad7ad,
     type: 3}
   m_PrefabInstance: {fileID: 1133289920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1900424270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7003831689061078870, guid: 54d625b36c947584b8c33bed13e5d0af,
+    type: 3}
+  m_PrefabInstance: {fileID: 5378964735880187239}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1902198745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4372262689276870880, guid: 54d625b36c947584b8c33bed13e5d0af,
+    type: 3}
+  m_PrefabInstance: {fileID: 5378964735880187239}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1903014344
 PrefabInstance:
