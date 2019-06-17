@@ -16,6 +16,7 @@ public class UI_Manager : MonoBehaviour
     public GameObject fonduFin;
     public GameObject livre;
     public GameObject levier;
+    public GameObject gameManager;
     public int chiffre = 0;
 
     public static UI_Manager s_Singleton;
@@ -101,6 +102,15 @@ public class UI_Manager : MonoBehaviour
             if (timer_deux >= 2)
             {
                 SceneManager.LoadScene(3);
+            }
+        }
+        if (gameManager == true && gameManager.GetComponent<GameManager>().unlockedAll == true)
+        {
+            fonduFin.SetActive(true);
+            timer_deux += Time.deltaTime;
+            if (timer_deux >= 2)
+            {
+                SceneManager.LoadScene(2);
             }
         }
     }
