@@ -54,13 +54,13 @@ public class EnigmeCuisine : MonoBehaviour
         if (check)
         {
             Instantiate(resultat, cakeTransform);
-            VFX.transform.position = transform.position;
-            VFX.Play();
             bake = true;
             check = false;
             nbrIngr = 0;
             gameManager.ghostsNbr++;
             gameManager.unlockedGrandma = true;
+            VFX.transform.position = transform.position;
+            VFX.Play();
         }
     }
 }
