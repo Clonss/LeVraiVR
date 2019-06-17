@@ -5,25 +5,27 @@ using UnityEngine;
 public class PathFollower : MonoBehaviour
 {
     public GameObject[] PathNode;
-    public GameObject Player;
+    public GameObject PS;
     public float MoveSpeed;
     float Timer;
     static Vector3 CurrentPositionHolder;
     int CurrentNode;
     private Vector2 startPosition;
+    public AudioSource Success;
+    public GameObject LastOne;
 
 
     // Use this for initialization
     void Start()
     {
-        //PathNode = GetComponentInChildren<>();
         CheckNode();
+
     }
 
     void CheckNode()
     {
         Timer = 0;
-        startPosition = Player.transform.position;
+        startPosition = PS.transform.position;
         CurrentPositionHolder = PathNode[CurrentNode].transform.position;
     }
 
@@ -33,10 +35,10 @@ public class PathFollower : MonoBehaviour
 
         Timer += Time.deltaTime * MoveSpeed;
 
-        if (Player.transform.position != CurrentPositionHolder)
+        if (PS.transform.position != CurrentPositionHolder)
         {
 
-            Player.transform.position = Vector3.Lerp(startPosition, CurrentPositionHolder, Timer);
+            PS.transform.position = Vector3.Lerp(startPosition, CurrentPositionHolder, Timer);
         }
         else
         {
@@ -45,6 +47,12 @@ public class PathFollower : MonoBehaviour
             {
                 CurrentNode++;
                 CheckNode();
+            }
+
+            if(transform.position == LastOne.transform.position)
+            {
+                Success.transform.position = transform.position;
+                Success.Play();
             }
         }
     }
