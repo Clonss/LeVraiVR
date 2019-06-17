@@ -9,7 +9,7 @@ public class EnigmeCuisine : MonoBehaviour
     public bool bake;
 
     public GameObject resultat;
-    public GameObject VFX;
+    public ParticleSystem VFX;
 
     private GameManager gameManager;
 
@@ -54,7 +54,8 @@ public class EnigmeCuisine : MonoBehaviour
         if (check)
         {
             Instantiate(resultat, cakeTransform);
-            VFX.SetActive(true);
+            VFX.transform.position = transform.position;
+            VFX.Play();
             bake = true;
             check = false;
             nbrIngr = 0;
