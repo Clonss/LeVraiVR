@@ -752,6 +752,7 @@ MonoBehaviour:
   unlockedMom: 0
   unlockedGrandma: 0
   unlockedAunt: 0
+  unlockedAll: 0
   dadDecouvert: {fileID: 0}
   dadNonDecouvert: {fileID: 0}
   momDecouvert: {fileID: 0}
@@ -2661,6 +2662,11 @@ PrefabInstance:
       propertyPath: livre
       value: 
       objectReference: {fileID: 717877934}
+    - target: {fileID: 881047130264140233, guid: 0a626100c98ed8f41bd7aa3ee32362b9,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 205384271}
     - target: {fileID: 881047130264140246, guid: 0a626100c98ed8f41bd7aa3ee32362b9,
         type: 3}
       propertyPath: m_Camera
@@ -3065,7 +3071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &780475508
 Transform:
   m_ObjectHideFlags: 0
@@ -14439,7 +14445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1510149369
 Light:
   m_ObjectHideFlags: 0

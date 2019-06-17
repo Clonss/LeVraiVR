@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public bool unlockedMom = false;
     public bool unlockedGrandma = false;
     public bool unlockedAunt = false;
+    public bool unlockedAll = false;
 
     public GameObject dadDecouvert;
     public GameObject dadNonDecouvert;
@@ -36,6 +37,10 @@ public class GameManager : MonoBehaviour
     {
         Timer();
         UnlockPages();
+        if(unlockedDad == true && unlockedAunt == true && unlockedGrandma == true && unlockedMom == true)
+        {
+            unlockedAll = true;
+        }
     }
 
     void Set()
