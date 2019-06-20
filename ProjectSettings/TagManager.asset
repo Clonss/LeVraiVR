@@ -12,6 +12,7 @@ TagManager:
   - Button
   - Aiguille
   - Ground
+  - Drawer
   layers:
   - Default
   - TransparentFX

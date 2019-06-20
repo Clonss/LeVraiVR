@@ -5159,9 +5159,10 @@ GameObject:
   - component: {fileID: 95391534}
   - component: {fileID: 95391536}
   - component: {fileID: 95391535}
+  - component: {fileID: 95391537}
   m_Layer: 0
   m_Name: PortePivot
-  m_TagString: Untagged
+  m_TagString: Drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5287,6 +5288,20 @@ MonoBehaviour:
   handFollowTransform: 1
   highlightOnHover: 1
   hideHighlight: []
+--- !u!114 &95391537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95391533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d68cf2d090e6d8449bf0910ba7c8e1b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DrawerOpening: {fileID: 243161380004115140}
+  DrawerClosing: {fileID: 1102885410297247372}
 --- !u!82 &226505904 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 6502758387181077231, guid: 57556f9d042f4b24f919155fe1ddc75b,
@@ -6988,6 +7003,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107680062}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &243161380004115140 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 243161380004115140, guid: 80f03f14c03e4ca4384c473ffe807983,
+    type: 3}
+  m_PrefabInstance: {fileID: 2694400672124728344}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1102885410297247372 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1102885410297247372, guid: 3c70ddc189046f947a439c15fc6925c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 3140869561826357467}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2694400672124728344
 PrefabInstance:
   m_ObjectHideFlags: 0
