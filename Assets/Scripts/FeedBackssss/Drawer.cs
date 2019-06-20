@@ -6,45 +6,54 @@ public class Drawer : MonoBehaviour
 {
     public AudioSource DrawerOpening;
     public AudioSource DrawerClosing;
-    private bool isOpened = false;
-    private bool isClosed = false;
+    private bool isPlayingSound = false;
+    private float posInit;
+    private float lastPos;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        posInit = transform.rotation.x;
+        lastPos = posInit;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.hasChanged)
+        if(transform.rotation.x > lastPos && !isPlayingSound)
         {
-            if(isOpened && !isClosed)
-            {
-                isOpening();
-            }
-
-            if(!isOpened && isClosed)
-            {
-                isClosing();
-            }
+            PlaySoundPull();
         }
+        else if(transform.rotation.x < lastPos && !isPlayingSound)
+        {
+            PlaySoundPush();
+        }
+        else if(transform.rotation.x == lastPos && isPlayingSound)
+        {
+            StopSound();
+        }
+
+        lastPos = transform.rotation.x;
     }
 
-    void isOpening()
+    void PlaySoundPull()
     {
-        isOpened = true;
-        isClosed = false;
-        DrawerOpening.transform.position = transform.position;
+        Debug.Log("tirer");
         DrawerOpening.Play();
+        isPlayingSound = true;
     }
 
-    void isClosing()
+    void PlaySoundPush()
     {
-        isOpened = false;
-        isClosed = true;
-        DrawerClosing.transform.position = transform.position;
+        Debug.Log("pousser");
         DrawerClosing.Play();
+        isPlayingSound = true;
+    }
+
+    void StopSound()
+    {
+        Debug.Log("à l'arrêt");
+        isPlayingSound = false;
+        DrawerClosing.Pause();
     }
 }
