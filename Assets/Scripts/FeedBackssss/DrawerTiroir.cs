@@ -2,38 +2,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Drawer : MonoBehaviour
+public class DrawerTiroir : MonoBehaviour
 {
     public AudioSource DrawerOpening;
     public AudioSource DrawerClosing;
     private bool isPlayingSound = false;
     private float posInit;
     private float lastPos;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        posInit = transform.rotation.x;
+        posInit = transform.position.z;
         lastPos = posInit;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(transform.rotation.x > lastPos && !isPlayingSound)
+        if (transform.position.z > lastPos && !isPlayingSound)
         {
             PlaySoundPull();
         }
-        else if(transform.rotation.x < lastPos && !isPlayingSound)
+        else if (transform.position.z < lastPos && !isPlayingSound)
         {
             PlaySoundPush();
         }
-        else if(transform.rotation.x == lastPos && isPlayingSound)
+        else if (transform.position.z == lastPos && isPlayingSound)
         {
             StopSound();
         }
 
-        lastPos = transform.rotation.x;
+        lastPos = transform.position.z;
     }
 
     void PlaySoundPull()
