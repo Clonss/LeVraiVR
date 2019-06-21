@@ -15,6 +15,12 @@ public class GameManager : MonoBehaviour
     public bool unlockedAunt = false;
     public bool unlockedAll = false;
 
+    public ParticleSystem Fire;
+    public ParticleSystem EndOfTheGame;
+
+    public GameObject Cheminee;
+    public GameObject Livre;
+
     /*public GameObject dadDecouvert;
     public GameObject dadNonDecouvert;
     public GameObject momDecouvert;
@@ -40,6 +46,7 @@ public class GameManager : MonoBehaviour
         if(unlockedDad == true && unlockedAunt == true && unlockedGrandma == true && unlockedMom == true)
         {
             unlockedAll = true;
+            Finish();
         }
     }
 
@@ -60,6 +67,15 @@ public class GameManager : MonoBehaviour
         {
             actualTime -= Time.deltaTime;
         }
+    }
+
+    void Finish()
+    {
+        unlockedAll = true;
+        Fire.transform.position = Cheminee.transform.position;
+        Fire.Play();
+        EndOfTheGame.transform.position = Livre.transform.position;
+        EndOfTheGame.Play();
     }
 
     /*public void UnlockPages()
