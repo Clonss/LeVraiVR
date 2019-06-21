@@ -15,11 +15,8 @@ public class GameManager : MonoBehaviour
     public bool unlockedAunt = false;
     public bool unlockedAll = false;
 
-    public ParticleSystem Fire;
-    public ParticleSystem EndOfTheGame;
-
-    public GameObject Cheminee;
-    public GameObject Livre;
+    public GameObject Fire;
+    public GameObject EndOfTheGame;
 
     /*public GameObject dadDecouvert;
     public GameObject dadNonDecouvert;
@@ -72,10 +69,8 @@ public class GameManager : MonoBehaviour
     void Finish()
     {
         unlockedAll = true;
-        Fire.transform.position = Cheminee.transform.position;
-        Fire.Play();
-        EndOfTheGame.transform.position = Livre.transform.position;
-        EndOfTheGame.Play();
+        Fire.SetActive(true);
+        EndOfTheGame.SetActive(true);
     }
 
     /*public void UnlockPages()

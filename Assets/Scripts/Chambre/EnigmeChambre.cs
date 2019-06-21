@@ -8,6 +8,9 @@ public class EnigmeChambre : MonoBehaviour
     public bool validated;
     private GameManager gameManager;
 
+    public ParticleSystem VFXSuccess;
+    public AudioSource SuccessSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +33,10 @@ public class EnigmeChambre : MonoBehaviour
             count = 0;
             gameManager.ghostsNbr++;
             gameManager.unlockedMom = true;
+            VFXSuccess.transform.position = transform.position;
+            VFXSuccess.Play();
+            SuccessSound.transform.position = transform.position;
+            SuccessSound.Play();
         }
     }
 }

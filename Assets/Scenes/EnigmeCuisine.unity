@@ -816,6 +816,8 @@ MonoBehaviour:
   unlockedGrandma: 0
   unlockedAunt: 0
   unlockedAll: 0
+  Fire: {fileID: 0}
+  EndOfTheGame: {fileID: 0}
   player: {fileID: 0}
 --- !u!4 &1040947311
 Transform:
@@ -1993,6 +1995,7 @@ MonoBehaviour:
   resultat: {fileID: 6665819732341756147, guid: 5602977f4523e274ab7e56f467be9f17,
     type: 3}
   VFX: {fileID: 763475653}
+  SuccessSound: {fileID: 0}
 --- !u!1 &1660506094
 GameObject:
   m_ObjectHideFlags: 0

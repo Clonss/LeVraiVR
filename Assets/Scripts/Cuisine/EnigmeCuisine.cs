@@ -10,6 +10,7 @@ public class EnigmeCuisine : MonoBehaviour
 
     public GameObject resultat;
     public ParticleSystem VFX;
+    public AudioSource SuccessSound;
 
     private GameManager gameManager;
 
@@ -61,6 +62,8 @@ public class EnigmeCuisine : MonoBehaviour
             gameManager.unlockedGrandma = true;
             VFX.transform.position = transform.position;
             VFX.Play();
+            SuccessSound.transform.position = transform.position;
+            SuccessSound.Play();
         }
     }
 }

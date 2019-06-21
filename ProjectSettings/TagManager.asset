@@ -13,6 +13,7 @@ TagManager:
   - Aiguille
   - Ground
   - Drawer
+  - Surface
   layers:
   - Default
   - TransparentFX

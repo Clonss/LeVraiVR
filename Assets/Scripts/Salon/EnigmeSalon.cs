@@ -9,6 +9,7 @@ public class EnigmeSalon : MonoBehaviour
     public GameObject lights;
     public GameObject music;
     public ParticleSystem Success;
+    public AudioSource SuccessSound;
 
     private GameManager gameManager;
 
@@ -35,5 +36,7 @@ public class EnigmeSalon : MonoBehaviour
         gameManager.unlockedDad = true;
         Success.transform.position = transform.position;
         Success.Play();
+        SuccessSound.transform.position = transform.position;
+        SuccessSound.Play();
     }
 }

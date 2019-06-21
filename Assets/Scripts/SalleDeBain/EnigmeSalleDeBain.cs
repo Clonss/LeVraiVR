@@ -10,6 +10,9 @@ public class EnigmeSalleDeBain : MonoBehaviour
 
     private GameManager gameManager;
 
+    public ParticleSystem VFX;
+    public AudioSource SuccessSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +34,10 @@ public class EnigmeSalleDeBain : MonoBehaviour
             count = 0;
             validated = true;
             gameManager.unlockedAunt = true;
+            VFX.transform.position = transform.position;
+            VFX.Play();
+            SuccessSound.transform.position = transform.position;
+            SuccessSound.Play();
         }
     }
 }
