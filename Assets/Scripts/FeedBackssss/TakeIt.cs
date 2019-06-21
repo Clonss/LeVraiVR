@@ -64,7 +64,6 @@ public class TakeIt : MonoBehaviour
             fallVFX.Play();
             /*GameObject tmpGo = Instantiate(fallVFX, collision.GetContact(0).point, Quaternion.identity);
             Destroy(tmpGo, 1f);*/
-            
         }
     }
 }
