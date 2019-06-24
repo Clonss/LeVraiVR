@@ -11,8 +11,6 @@ public class PathFollower : MonoBehaviour
     static Vector3 CurrentPositionHolder;
     int CurrentNode;
     private Vector2 startPosition;
-    public AudioSource Success;
-    public GameObject LastOne;
 
 
     // Use this for initialization
@@ -38,7 +36,7 @@ public class PathFollower : MonoBehaviour
         if (PS.transform.position != CurrentPositionHolder)
         {
 
-            PS.transform.position = Vector3.Lerp(startPosition, CurrentPositionHolder, Timer);
+            PS.transform.position = Vector3.MoveTowards(startPosition, CurrentPositionHolder, Timer);
         }
         else
         {
@@ -47,12 +45,6 @@ public class PathFollower : MonoBehaviour
             {
                 CurrentNode++;
                 CheckNode();
-            }
-
-            if(transform.position == LastOne.transform.position)
-            {
-                Success.transform.position = transform.position;
-                Success.Play();
             }
         }
     }

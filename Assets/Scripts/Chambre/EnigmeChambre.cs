@@ -11,12 +11,16 @@ public class EnigmeChambre : MonoBehaviour
     public ParticleSystem VFXSuccess;
     public AudioSource SuccessSound;
 
+    public PathFollower path;
+
     // Start is called before the first frame update
     void Start()
     {
         count = 0;
         validated = false;
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        path = GetComponent<PathFollower>();
     }
 
     // Update is called once per frame
