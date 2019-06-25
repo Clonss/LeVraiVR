@@ -16,6 +16,9 @@ public class EnigmeCuisine : MonoBehaviour
 
     private Transform cakeTransform;
 
+    public ParticleSystem granMa;
+    public GameObject pathGranMa;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,6 +67,8 @@ public class EnigmeCuisine : MonoBehaviour
             VFX.Play();
             SuccessSound.transform.position = transform.position;
             SuccessSound.Play();
+            granMa.transform.position = transform.position;
+            pathGranMa.SetActive(true);
         }
     }
 }

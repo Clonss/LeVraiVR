@@ -13,6 +13,9 @@ public class EnigmeSalon : MonoBehaviour
 
     private GameManager gameManager;
 
+    public ParticleSystem daddy;
+    public GameObject pathDaddy;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +34,7 @@ public class EnigmeSalon : MonoBehaviour
     public void Spin()
     {
         isTrue = true;
+        lights.SetActive(true);
         music.SetActive(true);
         gameManager.ghostsNbr++;
         gameManager.unlockedDad = true;
@@ -38,5 +42,7 @@ public class EnigmeSalon : MonoBehaviour
         Success.Play();
         SuccessSound.transform.position = transform.position;
         SuccessSound.Play();
+        daddy.transform.position = transform.position;
+        pathDaddy.SetActive(true);
     }
 }
