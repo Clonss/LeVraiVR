@@ -3,27 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Endgame : MonoBehaviour
+public class StartGame : MonoBehaviour
 {
     private float time;
-    private bool end;
+    private bool leverActive;
     public FonduNoir player;
 
     // Start is called before the first frame update
     void Start()
     {
         time = 1;
+        leverActive = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            end = true;
-        }
-
-        if (end)
+        if (leverActive)
         {
             time -= Time.deltaTime;
             player.fadeIn = true;
@@ -31,7 +27,12 @@ public class Endgame : MonoBehaviour
 
         if (time <= 0)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
+    }
+
+    public void OnLeverActivated()
+    {
+        leverActive = true;
     }
 }
