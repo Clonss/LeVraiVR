@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject Fire;
     public GameObject EndOfTheGame;
+    public AudioSource fire;
 
     /*public GameObject dadDecouvert;
     public GameObject dadNonDecouvert;
@@ -71,6 +72,7 @@ public class GameManager : MonoBehaviour
         unlockedAll = true;
         Fire.SetActive(true);
         EndOfTheGame.SetActive(true);
+        fire.Play();
     }
 
     /*public void UnlockPages()
