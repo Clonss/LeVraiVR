@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     public GameObject gmNonDecouvert;*/
 
     public GameObject player;
+    private GameObject fonduNoir;
 
     // Start is called before the first frame update
     void Start()
@@ -53,6 +54,8 @@ public class GameManager : MonoBehaviour
         maxTime = 1200;
         actualTime = maxTime;
         player = GameObject.Find("Player");
+        fonduNoir = GameObject.Find("VRFadeCanvas");
+        fonduNoir.GetComponent<FonduNoir>().fadeOut = true;
     }
 
     void Timer()
