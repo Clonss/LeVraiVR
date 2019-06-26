@@ -1,67 +1,26 @@
 fileFormatVersion: 2
-guid: a85bb8ad2b7e1b3408f47e2fe9ecc593
+guid: e9c71755d0129cc4db1e2df263186050
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Barre_1
-    100002: Barre_2
-    100004: Barre_3
-    100006: Barre_4
-    100008: Barres
-    100010: Pied_1
-    100012: Pied_2
-    100014: Pied_3
-    100016: Pied_4
-    100018: Pieds
-    100020: //RootNode
-    100022: Plat_1
-    100024: Plat_2
-    100026: Plateaux
-    400000: Barre_1
-    400002: Barre_2
-    400004: Barre_3
-    400006: Barre_4
-    400008: Barres
-    400010: Pied_1
-    400012: Pied_2
-    400014: Pied_3
-    400016: Pied_4
-    400018: Pieds
-    400020: //RootNode
-    400022: Plat_1
-    400024: Plat_2
-    400026: Plateaux
+    100000: Corps
+    100002: poignee_1
+    100004: poignee_2
+    100006: //RootNode
+    400000: Corps
+    400002: poignee_1
+    400004: poignee_2
+    400006: //RootNode
     2100000: lambert1
-    2300000: Barre_1
-    2300002: Barre_2
-    2300004: Barre_3
-    2300006: Barre_4
-    2300008: Pied_1
-    2300010: Pied_2
-    2300012: Pied_3
-    2300014: Pied_4
-    2300016: Plat_1
-    2300018: Plat_2
-    3300000: Barre_1
-    3300002: Barre_2
-    3300004: Barre_3
-    3300006: Barre_4
-    3300008: Pied_1
-    3300010: Pied_2
-    3300012: Pied_3
-    3300014: Pied_4
-    3300016: Plat_1
-    3300018: Plat_2
-    4300000: Pied_1
-    4300002: Pied_2
-    4300004: Pied_3
-    4300006: Pied_4
-    4300008: Barre_1
-    4300010: Barre_2
-    4300012: Barre_3
-    4300014: Barre_4
-    4300016: Plat_1
-    4300018: Plat_2
+    2300000: Corps
+    2300002: poignee_1
+    2300004: poignee_2
+    3300000: Corps
+    3300002: poignee_1
+    3300004: poignee_2
+    4300000: Corps
+    4300002: poignee_1
+    4300004: poignee_2
   externalObjects: {}
   materials:
     importMaterials: 1
