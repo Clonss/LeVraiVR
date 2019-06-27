@@ -19,15 +19,6 @@ public class GameManager : MonoBehaviour
     public GameObject EndOfTheGame;
     public AudioSource fire;
 
-    /*public GameObject dadDecouvert;
-    public GameObject dadNonDecouvert;
-    public GameObject momDecouvert;
-    public GameObject momNonDecouvert;
-    public GameObject auntDecouvert;
-    public GameObject auntNonDecouvert;
-    public GameObject gmDecouvert;
-    public GameObject gmNonDecouvert;*/
-
     public GameObject player;
     private GameObject fonduNoir;
 
@@ -76,28 +67,4 @@ public class GameManager : MonoBehaviour
         EndOfTheGame.SetActive(true);
         fire.Play();
     }
-
-    /*public void UnlockPages()
-    {
-        if(unlockedDad == true)
-        {
-            dadDecouvert.SetActive(true);
-            dadNonDecouvert.SetActive(false);
-        }
-        if (unlockedMom == true)
-        {
-            momDecouvert.SetActive(true);
-            momNonDecouvert.SetActive(false);
-        }
-        if (unlockedAunt == true)
-        {
-            auntDecouvert.SetActive(true);
-            auntNonDecouvert.SetActive(false);
-        }
-        if (unlockedGrandma == true)
-        {
-            gmDecouvert.SetActive(true);
-            gmNonDecouvert.SetActive(false);
-        }
-    }*/
 }

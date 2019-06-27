@@ -6,17 +6,33 @@ using UnityEngine.SceneManagement;
 public class Endgame : MonoBehaviour
 {
     private float time;
-    private bool end;
-    public FonduNoir player;
+    public bool end;
+    public FonduNoir fondu;
+    public GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
         time = 1;
+        fondu = GameObject.Find("VRFadeCanvas").GetComponent<FonduNoir>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
+    {
+        Leave();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Book") && gameManager.unlockedAll)
+        {
+            end = true;
+        }
+    }
+
+    void Leave()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -26,7 +42,7 @@ public class Endgame : MonoBehaviour
         if (end)
         {
             time -= Time.deltaTime;
-            player.fadeIn = true;
+            fondu.fadeIn = true;
         }
 
         if (time <= 0)

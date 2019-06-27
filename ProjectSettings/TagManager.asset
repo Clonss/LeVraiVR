@@ -14,6 +14,7 @@ TagManager:
   - Ground
   - Drawer
   - Surface
+  - Book
   layers:
   - Default
   - TransparentFX
