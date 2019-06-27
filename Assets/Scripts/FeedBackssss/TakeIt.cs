@@ -14,6 +14,8 @@ public class TakeIt : MonoBehaviour
     public AudioSource fallSound;
     private bool clip2Ended = false;
 
+    public float targetTime = 30f;
+
     public void Start()
     {
         rB = GetComponent<Rigidbody>();
@@ -21,25 +23,27 @@ public class TakeIt : MonoBehaviour
 
     public void Update()
     {
-        if (rB.isKinematic && !grabbed)
-        {
-            Grab();
-        }
+        targetTime -= Time.deltaTime;
 
-        if(grabSound.time == grabSound.clip.length)
-        {
-            clipEnded = true;
-            if (!rB.isKinematic)
+            if (rB.isKinematic && !grabbed)
             {
+                Grab();
+            }
+
+            if (grabSound.time == grabSound.clip.length)
+            {
+                clipEnded = true;
+                if (!rB.isKinematic)
+                {
+                    SoundEnded();
+                }
+            }
+
+            if (!rB.isKinematic && clipEnded)
+            {
+                clipEnded = false;
                 SoundEnded();
             }
-        }
-
-        if (!rB.isKinematic && clipEnded)
-        {
-            clipEnded = false;
-            SoundEnded();
-        }
     }
 
     void Grab()
@@ -56,14 +60,17 @@ public class TakeIt : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.CompareTag("Ground") || collision.collider.CompareTag("Surface"))
+        if(targetTime <= 0.0f)
         {
-            fallSound.transform.position = transform.position;
-            fallSound.Play();
-            fallVFX.transform.position = transform.position;
-            fallVFX.Play();
-            /*GameObject tmpGo = Instantiate(fallVFX, collision.GetContact(0).point, Quaternion.identity);
-            Destroy(tmpGo, 1f);*/
+            if (collision.collider.CompareTag("Ground") || collision.collider.CompareTag("Surface"))
+            {
+                fallSound.transform.position = transform.position;
+                fallSound.Play();
+                fallVFX.transform.position = transform.position;
+                fallVFX.Play();
+                /*GameObject tmpGo = Instantiate(fallVFX, collision.GetContact(0).point, Quaternion.identity);
+                Destroy(tmpGo, 1f);*/
+            }
         }
     }
 }
