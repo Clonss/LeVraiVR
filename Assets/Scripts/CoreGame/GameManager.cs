@@ -44,7 +44,6 @@ public class GameManager : MonoBehaviour
         //UnlockPages();
         if(unlockedDad == true && unlockedAunt == true && unlockedGrandma == true && unlockedMom == true)
         {
-            unlockedAll = true;
             Finish();
         }
     }
