@@ -56,7 +56,7 @@ public class TakeIt : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.CompareTag("Ground"))
+        if (collision.collider.CompareTag("Ground") || collision.collider.CompareTag("Surface"))
         {
             fallSound.transform.position = transform.position;
             fallSound.Play();
