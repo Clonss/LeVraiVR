@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Tableaux : MonoBehaviour
 {
-    public static GameObject aunt;
-    public static GameObject dad;
-    public static GameObject mom;
-    public static GameObject grandma;
+    public GameObject aunt;
+    public GameObject dad;
+    public GameObject mom;
+    public GameObject grandma;
 
     private GameManager gameManager;
 
@@ -15,10 +15,6 @@ public class Tableaux : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        dad = GameObject.Find("PortaitCanvas001");
-        mom = GameObject.Find("PortaitCanvas002");
-        grandma = GameObject.Find("PortaitCanvas003");
-        aunt = GameObject.Find("PortaitCanvas004");
     }
 
     // Update is called once per frame

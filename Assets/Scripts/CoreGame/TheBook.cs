@@ -34,16 +34,19 @@ public class TheBook : MonoBehaviour
             dadDecouvert.SetActive(true);
             dadNonDecouvert.SetActive(false);
         }
+
         if (gameManager.unlockedMom == true)
         {
             momDecouvert.SetActive(true);
             momNonDecouvert.SetActive(false);
         }
+
         if (gameManager.unlockedAunt == true)
         {
             auntDecouvert.SetActive(true);
             auntNonDecouvert.SetActive(false);
         }
+
         if (gameManager.unlockedGrandma == true)
         {
             gmDecouvert.SetActive(true);

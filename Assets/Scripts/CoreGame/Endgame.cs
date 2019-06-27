@@ -9,13 +9,15 @@ public class Endgame : MonoBehaviour
     public bool end;
     public FonduNoir fondu;
     public GameManager gameManager;
+    public GameObject logo;
 
     // Start is called before the first frame update
     void Start()
     {
-        time = 1;
+        time = 8;
         fondu = GameObject.Find("VRFadeCanvas").GetComponent<FonduNoir>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        logo = GameObject.Find("LogoVR");
     }
 
     // Update is called once per frame
@@ -43,11 +45,12 @@ public class Endgame : MonoBehaviour
         {
             time -= Time.deltaTime;
             fondu.fadeIn = true;
+            logo.SetActive(true);
         }
 
         if (time <= 0)
         {
-            SceneManager.LoadScene(0);
+            Application.Quit();
         }
     }
 }
